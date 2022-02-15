@@ -26,7 +26,42 @@ function Footer() {
                     </div>
                 </div>
             </div>
-
+            <div className='footer_nav'>
+                <div className='layouts-4-columns wrapper'>
+                    <div className='categories_links links'>
+                        <h3>Categories</h3>
+                        <ul className='links_list'>
+                            {categories.map(({ name, path }) => (
+                                <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
+                                    <li>{name}</li></Link>))}
+                        </ul>
+                    </div>
+                    <div className='information_links links'>
+                        <h3>Information</h3>
+                        <ul className='links_list'>
+                            {information.map(({ name, path }) => (
+                                <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
+                                    <li>{name}</li></Link>))}
+                        </ul>
+                    </div>
+                    <div className='useful_links links'>
+                        <h3>Useful links</h3>
+                        <ul className='links_list'>
+                            {useful.map(({ name, path }) => (
+                                <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
+                                    <li>{name}</li></Link>))}
+                        </ul>
+                    </div>
+                    <div className='contacts_links links'>
+                        <h3>Contact us</h3>
+                        <ul className='footer_contacts'>
+                            {contacts.map(({ img, name, path }) => (
+                                <Link to={`/${path}`} data-test-id={`footer-nav-link-${path}`}>
+                                    <li><img src={img} alt='' /><span>{name}</span></li></Link>))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </footer>
 
