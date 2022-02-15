@@ -1,0 +1,95 @@
+.special {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+    padding: 60px 0;
+}
+
+.offer {
+    width: 340px;
+    height: 461px;
+    padding: 0px 96px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.offer h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+.offer p {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.for_women {
+    background-image: url('./assets/women.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 311px;
+    height: 546px;
+    bottom: 0;
+    left: 30px;
+}
+
+.for_men {
+    background-image: url('./assets/men.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 219px;
+    height: 546px;
+    bottom: 0;
+    right: 72px;
+}
+
+/***MEDIA***/
+/*media---1300рх до 768рх*/
+@media screen and (min-width:991px) and (max-width:1216px) {
+    .for_women {
+        left: -20px;
+    }
+
+    .for_men {
+        right: 32px;
+    }
+
+}
+
+/*990*/
+@media (max-width:990px) {
+
+    .for_women,
+    .for_men {
+        display: none;
+    }
+}
+
+/*617*/
+@media screen and (min-width:360px) and (max-width:617px) {
+    .offer {
+        width: 340px;
+        height: 461px;
+        padding: 0px 10px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}

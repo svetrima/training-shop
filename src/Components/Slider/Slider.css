@@ -1,0 +1,17 @@
+.arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    cursor: pointer;
+}
+
+.arrow_left {
+    background-image: url('./assets/arrow_left.png');
+    left: 24px;
+}
+
+.arrow_right {
+    background-image: url('./assets/arrow_right.png');
+    right: 24px;
+}
