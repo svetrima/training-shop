@@ -1,0 +1,123 @@
+.blog {
+    padding: 57px 0px 96px;
+}
+
+.blog_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.blog_header h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.blog_header span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.article_block {
+    width: 350px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.article_card h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /*padding:24px 0px 12px;*/
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+.article_card p {
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+.article_card {
+    width: 271px;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+}
+
+.first_post {
+    background-image: url('./assets/item_1.jpg');
+    background-repeat: no-repeat;
+}
+
+.second_post {
+    background-image: url('./assets/item_2.jpg');
+    background-repeat: no-repeat;
+}
+
+.third_post {
+    background-image: url('./assets/item_3.jpg');
+    background-repeat: no-repeat;
+
+}
+
+/***MEDIA***/
+/*media---1300рх до 768рх*/
+@media screen and (min-width:991px) and (max-width:1216px) {
+    .article_block:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+}
+
+/*990*/
+@media screen and (min-width:791px) and (max-width:990px) {
+    .blog_header {
+        justify-content: space-around;
+    }
+
+    .article_block:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+
+/*887*/
+@media screen and (min-width:791px) and (max-width:887px) {
+    .article_block:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+
+/*790*/
+@media screen and (min-width:360px) and (max-width:790px) {
+    .blog .layouts-3-columns {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .article_block:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .blog_header {
+        justify-content: space-around;
+    }
+}
