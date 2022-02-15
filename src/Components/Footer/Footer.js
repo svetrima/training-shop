@@ -13,7 +13,7 @@ import mastercard from './assets/mastercard_x42.png';
 import discover from './assets/discover_x42.png';
 import americanexpress from './assets/american-express_x42.png';
 import { Link } from 'react-router-dom';
-import { categories } from './CategoriesLink';
+import { categories } from './CategoriesLinks';
 import { information } from './Information';
 import { useful } from './UsefulLinks';
 import { contacts } from './Contacts';
