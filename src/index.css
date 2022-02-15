@@ -28,3 +28,17 @@ code {
   padding-right: 85px;
   margin: 0 auto;
 }
+
+.layouts-2-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.layouts-3-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
