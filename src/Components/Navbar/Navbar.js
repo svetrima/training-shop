@@ -7,7 +7,14 @@ import facebook from './assets/facebook.png';
 import twitter from './assets/twitter.png';
 import instagram from './assets/instagram.png';
 import pinterest from './assets/pinterest.png';
+import Logo from './assets/CleverShop.png';
+import Search from './assets/search.png';
+import Globe from './assets/globe.png';
+import User from './assets/user.png';
+import Cart from './assets/shopping-bag.png';
 
+import { Link } from 'react-router-dom';
+import { NavMenu } from './NavLinkData';
 
 
 function Navbar() {
@@ -27,6 +34,26 @@ function Navbar() {
                     <li><img src={instagram} alt="inst" /></li>
                     <li><img src={pinterest} alt="pint" /></li>
                 </ul>
+            </div>
+            <div className='nav_main wrapper'>
+
+                <div className='nav_main__bars layouts-3-columns'>
+                    <div className='logo' data-test-id='header-logo-link'>
+                        <Link to='/' data-test-id='header-logo-link'><img src={Logo} alt='CleverShop' /></Link>
+                    </div>
+                    <ul className="bars_item" data-test-id='menu'>
+                        {NavMenu.map(({ id, name, path }) => (
+                            <Link key={id} to={`/${path}`} className={'menu-item'} data-test-id={`menu-link-${path}`}>
+                                <li>{name}</li></Link>
+                        ))}
+                    </ul>
+                    <ul class="bars_icon">
+                        <li><img src={Search} alt="search" /></li>
+                        <li><img src={Globe} alt="globe" /></li>
+                        <li><img src={User} alt="user" /></li>
+                        <li><img src={Cart} alt="cart" /></li>
+                    </ul>
+                </div>
             </div>
 
         </nav>
