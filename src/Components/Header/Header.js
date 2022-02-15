@@ -3,14 +3,14 @@ import './Header.css';
 import exchange from './assets/refresh.png';
 import delivery from './assets/truck.png';
 import support from './assets/support.png';
-
+import Slider from '../Slider/Slider';
 
 function Header() {
     return (
         <header className='wrapper'>
             <div className='header_content layouts-2-columns' data-test-id='header'>
                 <div className='main_block'>
-                    
+                    <Slider />
                     <div className='main_block__banner banner'>
                         <p>banner</p>
                         <h2>your title text</h2>
