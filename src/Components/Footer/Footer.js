@@ -5,6 +5,19 @@ import facebook from '../Navbar/assets/facebook.png';
 import twitter from '../Navbar/assets/twitter.png';
 import instagram from '../Navbar/assets/instagram.png';
 import pinterest from '../Navbar/assets/pinterest.png';
+import stripe from './assets/Stripe_x42.png';
+import aes from './assets/aes_x42.png';
+import paypal from './assets/paypal_2_x42.png';
+import visa from './assets/visa_x42.png';
+import mastercard from './assets/mastercard_x42.png';
+import discover from './assets/discover_x42.png';
+import americanexpress from './assets/american-express_x42.png';
+import { Link } from 'react-router-dom';
+import { categories } from './CategoriesLink';
+import { information } from './Information';
+import { useful } from './UsefulLinks';
+import { contacts } from './Contacts';
+
 
 function Footer() {
     return (
@@ -60,6 +73,24 @@ function Footer() {
                                     <li><img src={img} alt='' /><span>{name}</span></li></Link>))}
                         </ul>
                     </div>
+                </div>
+            </div>
+
+            <div className='footer_bottom wrapper'>
+                <div className='layouts-3-columns'>
+                    <div className='copyright'>Copyright В© 2032 all rights reserved</div>
+                    <div className='pay'>
+                        <ul className='pay_links'>
+                            <li><img src={stripe} alt="stripe" /></li>
+                            <li><img src={aes} alt="aes" /></li>
+                            <li><img src={paypal} alt="paypal" /></li>
+                            <li><img src={visa} alt="visa" /></li>
+                            <li><img src={mastercard} alt="mastecard" /></li>
+                            <li><img src={discover} alt="discover" /></li>
+                            <li><img src={americanexpress} alt="americanexpress" /></li>
+                        </ul>
+                    </div>
+                    <div className='author'>Clevertec.ru/training</div>
                 </div>
             </div>
 
