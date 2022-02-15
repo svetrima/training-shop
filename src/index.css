@@ -42,3 +42,60 @@ code {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.layouts-4-columns {
+  padding: 48px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.9;
+  border: none;
+  width: 340px;
+  height: 64px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #121212;
+}
+
+.btn:hover {
+  filter: invert(10%);
+  /*временная фишка*/
+}
+
+input {
+  width: 340px;
+  border: none;
+  outline: none;
+  background-color: #F8F8F8;
+  height: 38px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 22px 0px 24px;
+  color: #121212;
+}
+
+input::placeholder {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.4;
+  text-align: center;
+  padding-left: -16px;
+}
