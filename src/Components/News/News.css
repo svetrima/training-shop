@@ -1,0 +1,83 @@
+.news_block {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    padding: 96px 0;
+}
+
+.news_block__season {
+    background-image: url('./assets/season.png');
+    width: 540px;
+    height: 260px;
+}
+
+.news_block__sale {
+    background-image: url('./assets/sale.png');
+    width: 540px;
+    height: 260px;
+}
+
+.news_block__sale,
+.news_block__season {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.news_block__banner {
+    width: 293px;
+}
+
+.news_block__banner h3,
+.news_block__banner p {
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.news_block__banner h3 {
+    font-size: 12px;
+    line-height: 13px;
+    opacity: 0.6;
+    margin-bottom: 14px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.sales {
+    color: #E91E63;
+}
+
+/***MEDIA***/
+/*media---1300рх до 768рх*/
+@media screen and (min-width:991px) and (max-width:1216px) {
+    .news_block__season {
+        margin-bottom: 20px;
+    }
+
+}
+
+/*990*/
+@media screen and (min-width:791px) and (max-width:990px) {
+    .news_block__season {
+        margin-bottom: 20px;
+    }
+}
+
+/*790*/
+@media screen and (min-width:360px) and (max-width:887px) {
+    .news_block__season {
+        margin-bottom: 20px;
+    }
+}
+
+/*617*/
+@media screen and (min-width:360px) and (max-width:617px) {
+    .news_block {
+        width: 360px;
+    }
+}
