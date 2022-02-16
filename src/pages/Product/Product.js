@@ -35,6 +35,8 @@ import choice2 from './assets/choice_3.png';
 import choice3 from './assets/choice_4.png';
 import message from './assets/icons/annotation.png';
 import { info } from './Info';
+import { related } from './RelatedProduct';
+import { Link } from 'react-router-dom';
 
 
 function Product() {
@@ -44,22 +46,29 @@ function Product() {
             <Navbar />
             <div className='page-product' data-test-id={`product-page-${productType}`}>
                 <Breadcrumbs />
-                <div className='main_title wrapper'><h2>Women's tracksuit Q109</h2></div>
-                <div className='preview_info layouts-2-columns wrapper'>
-                    <div className='preview_rating'>
-                        <img src={fullrating} alt='rating' />
-                        <span className='count_review'>2 reviews</span>
-                    </div>
-                    <div className='preview_sku'>
-                        <div className='sku_article'>SKU:<span>777</span></div>
-                        <div className='sku_available'>Availability:<span>In Stock</span></div>
+                <div className='head_product'>
+                    <div className='main_title wrapper'><h2>Women's tracksuit Q109</h2></div>
+                    <div className='preview_info layouts-2-columns wrapper'>
+                        <div className='preview_rating'>
+                            <img src={fullrating} alt='rating' />
+                            <span className='count_review'>2 reviews</span>
+                        </div>
+                        <div className='preview_sku layouts-2-columns'>
+                            <div className='sku_article'>SKU:<span>777</span></div>
+                            <div className='sku_available'>Availability:<span>In Stock</span></div>
+                        </div>
                     </div>
                 </div>
 
                 <div className='wrapper'>
                     <div className='gallery layouts-2-columns'>
                         <div className='gallery_block layouts-2-columns'>
+
                             <div className='gallery_block__choose'>
+                                <div className='paginaition'>
+                                    <div className='arrow_prev arrow_up'>up</div>
+                                    <div className='arrow_next arrow_down'>down</div>
+                                </div>
                                 <img src={mediumActive} alt='active' />
                                 <img src={medium1} alt='medium1' />
                                 <img src={medium2} alt='medium2' />
@@ -150,55 +159,70 @@ function Product() {
                                 <div className='review_info'>
                                     <h3>reviews</h3>
                                     <div className='review_sub layouts-2-columns'>
-                                    <div className='rating_info'>
-                                        <img src={fullrating} alt='rating' />
-                                        <span className='count_review'>2 reviews</span>
+                                        <div className='rating_info'>
+                                            <img src={fullrating} alt='rating' />
+                                            <span className='count_review'>2 reviews</span>
                                         </div>
                                         <div className='new_review'>
-                                    <img src={message} alt='message' />
-                                    <span className='add_review'>Write a review</span>
+                                            <img src={message} alt='message' />
+                                            <span className='add_review'>Write a review</span>
 
-                                </div>
+                                        </div>
                                     </div>
                                     <div className='review_block'>
-                                    <div className='review_block__title layouts-2-columns'>
-                                        <h4 className='user_title'>Oleh Chabanov</h4>
-                                        <div className='rating_info'>
-                                        <span className='date_review'>3 months ago</span>
-                                        <img src={fullrating} alt='rating' /></div>
+                                        <div className='review_block__title layouts-2-columns'>
+                                            <h4 className='user_title'>Oleh Chabanov</h4>
+                                            <div className='rating_info'>
+                                                <span className='date_review'>3 months ago</span>
+                                                <img src={fullrating} alt='rating' /></div>
                                         </div>
                                         <div className='user_content'>
                                             <p>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
                                         </div>
-                                        
+
                                     </div>
                                     <div className='review_block'>
                                         <div className='review_block__title layouts-2-columns'>
-                                        <h4 className='user_title'>ShAmAn design</h4>
-                                        <div className='rating_info'>
-                                        <span className='date_review'>3 months ago</span>
-                                        <img src={fullrating} alt='rating' />
+                                            <h4 className='user_title'>ShAmAn design</h4>
+                                            <div className='rating_info'>
+                                                <span className='date_review'>3 months ago</span>
+                                                <img src={fullrating} alt='rating' />
+                                            </div>
                                         </div>
-                                        </div>
-                                        
-                                        
+
+
                                         <div className='user_content'>
-                                          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
-                              
+
                             </div>
                         </div>
                     </div>
                     <div className='gallery_related'>
                         <div className='gallery_related__title layouts-2-columns'>
-                        <h2>related products</h2>
-                        <div className='paginaition'>
-                        <div className='arrow_prev'>left</div>
-                         <div className='arrow_next'>right</div>
-                         </div>
+                            <h2>related products</h2>
+                            <div className='paginaition'>
+                                <div className='arrow_prev'>left</div>
+                                <div className='arrow_next'>right</div>
+                            </div>
+
+                        </div>
+                        <div className='gallery_related__block layouts-4-columns'>
+                            {related.map(element => {
+                                return <Link to={`/${element.category}/${element.id}`} className='cards-item'><div className='card'>
+                                    <img key={element.img} src={element.img} alt={element.title} />
+                                    <div className='card_content'>
+                                        <h4 className='card_item__title'>{element.title}</h4>
+                                        <div className='card_item__description'>
+                                            <span className='card_item__price'>{element.price}</span>
+                                            <img key={element.rating} src={element.rating} alt='rating' /></div>
+                                    </div>
+                                </div>
+                                </Link>
+                            })}
                         </div>
                     </div>
                 </div>

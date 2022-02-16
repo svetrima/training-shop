@@ -1,6 +1,9 @@
 .gallery_block {
-    border: 1px solid red;
     margin-right: 20px;
+}
+
+.head_product {
+    padding-bottom: 32px;
 }
 
 .layouts-2-columns {
@@ -18,8 +21,29 @@
     text-transform: none;
 }
 
+.preview_info {
+    background-color: #F8F8F8;
+}
+
+.sku_article,
+.sku_available {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    opacity: 0.6;
+}
+
+.sku_article {
+    margin-right: 24px;
+}
+
+.sku_article span,
+.sku_available span {
+    font-weight: bold;
+    opacity: 1;
+}
+
 .gallery_description {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,6 +51,7 @@
 
 .gallery_block__preview {
     position: relative;
+    height: 560px;
 }
 
 .clothes_description__color h4,
@@ -51,7 +76,8 @@
 .clothes_description,
 .gallery_description__price,
 .gallery_description__checkout,
-.gallery_description__info {
+.gallery_description__info,
+.gallery_description__info>h3 {
     width: 100%;
     border-bottom: 2px solid #E6E6E6;
     box-sizing: border-box;
@@ -145,11 +171,31 @@ h4 {
 }
 
 /*pay*/
-.gallery_description__checkout {
+.gallery_description__checkout,
+.gallery_description__checkout h4 {
     padding: 0px 0px 32px;
 }
 
+.gallery_description__checkout h4 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 /*additional info*/
+
+.gallery_description__info>h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding: 32px 0;
+}
+
 .description_details {
     padding: 32px 0px 32px;
 }
