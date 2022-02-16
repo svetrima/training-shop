@@ -1,0 +1,107 @@
+.cards {
+    padding-top: 96px;
+}
+
+/*.cards_content {
+   padding-top: 96px;*/
+/* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+
+.cards_title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.cards_filter span {
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cards_filter span:last-child {
+    margin-right: 0;
+}
+
+.filter_tab:first-child {
+    opacity: 1;
+    /*чисто декоративная фишка, пока нет логики*/
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card_item__title {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    padding: 16px 0;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.card_item__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_item__price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.cards_btn__full {
+    display: block;
+    width: 100%;
+    background: #F8F8F8;
+    /* gr-white */
+    outline: none;
+    border: 2px solid #F8F8F8;
+    box-sizing: border-box;
+    cursor: pointer;
+    /*декоративка, из-за стилей пока не видно, что кнопка*/
+}
+
+.cards_btn__full span {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    padding: 15.6px 0px 17.4px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: block;
+    opacity: 0.8;
+}
+
+/*990*/
+@media screen and (min-width:791px) and (max-width:990px) {
+    .cards .layouts-2-columns {
+        justify-content: space-around;
+    }
+
+}
+
+/*790*/
+@media screen and (min-width:360px) and (max-width:790px) {
+    .cards .layouts-2-columns {
+        display: block;
+    }
+
+    .cards_title {
+        margin-bottom: 20px;
+    }
+}
