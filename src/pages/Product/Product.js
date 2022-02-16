@@ -65,9 +65,9 @@ function Product() {
                         <div className='gallery_block layouts-2-columns'>
 
                             <div className='gallery_block__choose'>
-                                <div className='paginaition'>
-                                    <div className='arrow_prev arrow_up'>up</div>
-                                    <div className='arrow_next arrow_down'>down</div>
+                                <div className='paginaition layouts-2-columns'>
+                                    <div className='chevron chevron_up'></div>
+                                    <div className='chevron chevron_down'></div>
                                 </div>
                                 <img src={mediumActive} alt='active' />
                                 <img src={medium1} alt='medium1' />
@@ -204,9 +204,9 @@ function Product() {
                     <div className='gallery_related'>
                         <div className='gallery_related__title layouts-2-columns'>
                             <h2>related products</h2>
-                            <div className='paginaition'>
-                                <div className='arrow_prev'>left</div>
-                                <div className='arrow_next'>right</div>
+                            <div className='paginaition layouts-2-columns'>
+                                <div className='chevron chevron_prev'></div>
+                                <div className='chevron chevron_next'></div>
                             </div>
 
                         </div>

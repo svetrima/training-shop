@@ -267,3 +267,22 @@ h4 {
     line-height: 22px;
     opacity: 0.8;
 }
+/*chevron*/
+.chevron{
+    background-image: url('./assets/chevron.png');
+    background-repeat: no-repeat;
+    width: 24px;
+height: 24px;
+}
+.chevron_up{
+    transform: rotate(90deg);
+}
+.chevron_down{
+    transform: rotate(-90deg);
+}
+.chevron_next{
+    transform: rotate(180deg);
+}
+.gallery_block__choose>div {
+    margin-bottom:10px;
+}
