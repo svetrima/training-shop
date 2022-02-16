@@ -7,6 +7,7 @@ function App() {
     <div className="App" data-test-id="app">
       <Routes>
         <Route index element={<Main />} />
+        
       </Routes>
     </div>
   );
