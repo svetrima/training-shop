@@ -272,7 +272,7 @@ h4 {
     background-image: url('./assets/chevron.png');
     background-repeat: no-repeat;
     width: 24px;
-height: 24px;
+    height: 24px;
 }
 .chevron_up{
     transform: rotate(90deg);
@@ -285,4 +285,30 @@ height: 24px;
 }
 .gallery_block__choose>div {
     margin-bottom:10px;
+}
+ /*1100*/
+ @media screen and (min-width:559px) and (max-width:1200px){
+  
+    .gallery {
+      flex-wrap: wrap;
+    }
+
+    }
+     /*1100*/
+ @media screen and (min-width:360px) and (max-width:558px){
+    .wrapper{
+        width:360px;
+        padding:0;
+      }
+  
+    .gallery, .gallery_block{
+        flex-wrap: wrap;
+      }
+
+.gallery_block__choose{
+    margin-right:0;
+    }
+    .gallery_description__checkout .pay_links{
+        flex-wrap: wrap;
+    }
 }

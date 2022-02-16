@@ -88,4 +88,7 @@ header {
     .menu-item {
         font-size: 10px;
     }
+    .bars_item{
+        flex-wrap: wrap;
+    }
 }
