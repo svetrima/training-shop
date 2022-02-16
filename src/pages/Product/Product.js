@@ -40,7 +40,7 @@ import { Link } from 'react-router-dom';
 
 
 function Product() {
-    const productType = ['men'];
+    const productType = ['women'];
     return (
         <div>
             <Navbar />
