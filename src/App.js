@@ -11,11 +11,11 @@ function App() {
     <div className="App" data-test-id="app">
       <Routes>
         <Route index element={<Main />} />
-        <Route path="/Women" element={<PageWomen />} />
-        <Route path="/Men" element={<PageMen />} />
+        <Route path="/women" element={<PageWomen />} />
+        <Route path="/men" element={<PageMen />} />
         <Route path="/NotFoundPage" element={<NotFoundPage />} />
-        <Route path="/Men/:id" element={<Product />} />
-        <Route path="/Women/:id" element={<Product />} />
+        <Route path="/men/:id" element={<Product />} />
+        <Route path="/women/:id" element={<Product />} />
       </Routes>
     </div>
   );
