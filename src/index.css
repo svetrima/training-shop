@@ -44,7 +44,7 @@ code {
 }
 
 .layouts-4-columns {
-  padding: 48px 0;
+  padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
