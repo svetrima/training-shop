@@ -12,22 +12,30 @@ import Breadcrumbs from './Breadcrumbs';
 
 
 function PageWomen() {
+    const productType = ['women'];
     return (
         <div>
             <Navbar />
-            <div className='wrapper'>
+            <div className='products-page' data-test-id={`products-page-${productType}`}>
                 <Breadcrumbs />
-                <div className='main_title'><h2>Women</h2></div>
-                <div className='filter_panel'>
-                    <div className='filter'><img src={filter} alt='filter' /><span>Filter</span></div>
-                    <div className='filter_view'>
-                        <div className='filter_view__list'><img src={list} alt='grid' /></div>
-                        <div className='filter_view__grid'><img src={grid} alt='grid' /></div>
+
+                <div className='main_title wrapper'><h2>Women</h2></div>
+                <div className='wrapper'>
+                    <div className='filter_panel'>
+                        <div className='filter'><img src={filter} alt='filter' /><span>Filter</span></div>
+                        <div className='filter_view'>
+                            <div className='filter_view__list'><img src={list} alt='grid' /></div>
+                            <div className='filter_view__grid'><img src={grid} alt='grid' /></div>
+                        </div>
+                        <div className='filter_bestseller'>
+                            <select>
+                                <option value='bestsellers'>bestsellers</option>
+                            </select>
+                        </div>
                     </div>
-                    <div className='filter_bestseller'></div>
+                    <WomenList />
+                    <div className='preloader'><img src={preloader} alt='preloader' /></div>
                 </div>
-                <WomenList />
-                <div className='preloader'><img src={preloader} alt='preloader' /></div>
             </div>
             <Footer />
         </div>
