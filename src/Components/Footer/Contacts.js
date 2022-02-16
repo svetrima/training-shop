@@ -15,7 +15,7 @@ export const contacts = [
         id:2,
         img:Phone,
         name:'+375 29 100 20 30',
-        path:'phone',
+        path:'callto:+375 29 100 20 30',
     },{
         id:3,
         img:Clock,
@@ -26,7 +26,7 @@ export const contacts = [
         id:4,
         img:Mail,
         name:'info@clevertec.ru',
-        path:'mail',
+        path:'mailto:info@clevertec.ru',
     },
    
 ]

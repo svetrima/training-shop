@@ -32,6 +32,6 @@ export const NavMenu = [
     {
         id:7,
         name:'Contact',
-        path:'Product',
+        path:'NotFoundPage',
     },
 ]
