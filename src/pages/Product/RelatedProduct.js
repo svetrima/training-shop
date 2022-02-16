@@ -1,7 +1,7 @@
 export const related = [
     {
         id: 1,
-        category: 'men',
+        category: 'women',
         title: "Women's tracksuit Q109",
         price: '$ 30.00',
         rating: require('../../Components/List/assets/rating.png'),
@@ -9,7 +9,7 @@ export const related = [
     },
     {
         id: 2,
-        category: 'men',
+        category: 'women',
         title: "Women's tracksuit Q109",
         price: '$ 30.00',
         rating: require('../../Components/List/assets/rating.png'),
@@ -17,7 +17,7 @@ export const related = [
     },
     {
         id: 3,
-        category: 'men',
+        category: 'women',
         title: "Women's tracksuit Q109",
         price: '$ 30.00',
         rating: require('../../Components/List/assets/rating.png'),
@@ -25,7 +25,7 @@ export const related = [
     },
     {
         id: 4,
-        category: 'men',
+        category: 'women',
         title: "Women's tracksuit Q109",
         price: '$ 30.00',
         rating: require('../../Components/List/assets/rating.png'),
