@@ -1,12 +1,17 @@
-.gallery_block {
-    margin-right: 20px;
-}
-
 .head_product {
     padding-bottom: 32px;
 }
 
-.layouts-2-columns {
+.gallery_block {
+    margin-right: 20px;
+}
+
+.gallery_block__choose {
+    margin-right: 16px;
+}
+
+.gallery,
+.gallery_block {
     flex-wrap: nowrap;
 }
 
