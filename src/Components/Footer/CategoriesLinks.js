@@ -2,23 +2,23 @@ export const categories = [
     {
         id:1,
         name:'Men',
-        path:'Men',
+        path:'men',
     },
     {
         id:2,
         name:'Women',
-        path:'Women',
+        path:'women',
     },
     {
         id:3,
         name:'Accessories',
-        path:'Accessories',
+        path:'accessories',
     },
     
     {
         id:4,
         name:'Beauty',
-        path:'Beauty',
+        path:'beauty',
     },
    
 ]
