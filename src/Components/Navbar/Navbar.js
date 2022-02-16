@@ -39,7 +39,7 @@ function Navbar() {
 
                 <div className='nav_main__bars layouts-3-columns'>
                     <div className='logo' data-test-id='header-logo-link'>
-                        <Link to='/' data-test-id='header-logo-link'><img src={Logo} alt='CleverShop' /></Link>
+                        <Link to='/'><img src={Logo} alt='CleverShop' /></Link>
                     </div>
                     <ul className="bars_item" data-test-id='menu'>
                         {NavMenu.map(({ id, name, path }) => (
