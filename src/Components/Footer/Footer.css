@@ -104,7 +104,7 @@
 }
 
 /*887*/
-@media screen and (min-width:360px) and (max-width:887px) {
+/*@media screen and (min-width:360px) and (max-width:887px) {
     .footer_bottom {
         height: 60px;
     }
@@ -124,7 +124,7 @@
 }
 
 /*887*/
-@media screen and (min-width:360px) and (max-width:750px) {
+/*@media screen and (min-width:360px) and (max-width:750px) {
 
     .footer_nav .layouts-4-columns .links {
         width: 250px;
@@ -137,9 +137,32 @@
 }
 
 /*617*/
-@media screen and (min-width:360px) and (max-width:617px) {
+/*@media screen and (min-width:360px) and (max-width:617px) {
     .footer_block__top .layouts-3-columns {
         flex-direction: column;
         height: 86px;
+    }
+}*/
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    .footer_block__top .layouts-3-columns {
+        flex-direction: column;
+        height: 96px;
+    }
+
+    .form {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .information_links,
+    .useful_links,
+    .pay,
+    .form_title {
+        display: none;
     }
 }

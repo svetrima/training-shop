@@ -184,15 +184,49 @@ header p {
 
 /*375*/
 
-@media screen and (min-width:375px) and (max-width:1109px){
+@media screen and (min-width:375px) and (max-width:1109px) {
     .main_block {
         margin-right: 0;
         margin-bottom: 30px;
     }
+
     .sub_block__women {
         margin-right: 30px;
     }
 }
-@media screen and (min-width:375px) and (max-width:767px){
-    
+
+@media screen and (min-width:320px) and (max-width:374px) {
+
+    .sub_block__accessories,
+    .sub_block__women,
+    .sub_block__men {
+        width: 100%;
+        background-image: none;
+        height: 80px;
+        margin: 0;
+    }
+
+    .main_block {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .sub_block {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: unset;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .header_content {
+        padding-bottom: 0;
+    }
+
+    .sub_block__banner {
+        color: #FFFFFF;
+        background-color: #121212;
+        opacity: 0.4;
+    }
+
 }

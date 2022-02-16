@@ -93,8 +93,23 @@ header {
     }
 }*/
 
-@media screen and (min-width:375px) and (max-width:767px){
-    .logo{
-        padding-bottom:0;
+@media screen and (min-width:375px) and (max-width:767px) {
+    .logo {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+
+    .nav_block {
+        width: 100%;
+    }
+
+    .bars_item {
+        flex-wrap: wrap;
+    }
+
+    .nav_main .menu-item {
+        padding: 5px 0;
     }
 }

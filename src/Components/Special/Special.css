@@ -88,7 +88,7 @@
     }
 }*/
 
-@media screen and (min-width:768px) and (max-width:1109px){
+@media screen and (min-width:768px) and (max-width:1109px) {
     .for_women {
         left: -20px;
     }
@@ -97,17 +97,41 @@
         right: 32px;
     }
 }
-@media screen and (min-width:375px) and (max-width:767px){
-    .for_women, .for_men{
+
+@media screen and (min-width:350px) and (max-width:767px) {
+
+    .for_women,
+    .for_men {
         display: none;
     }
-    .offer{
-        width:320px;
-        height:281px;
-        padding:0px 76px;
+
+    .offer {
+        width: 320px;
+        height: 281px;
+        padding: 0px 76px;
     }
-    form, .offer_btn, input{
-width:100%;
+
+    form,
+    .offer_btn,
+    input {
+        width: 100%;
     }
-    
+
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    .offer p {
+        font-size: 16px;
+    }
+
+    .offer {
+        width: 150px;
+    }
+
+    form,
+    .offer_btn,
+    input[type="email"] {
+        width: 100%;
+    }
+
 }

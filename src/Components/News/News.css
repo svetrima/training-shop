@@ -80,8 +80,12 @@ p {
     }
 }*/
 
-@media screen and (min-width:375px) and (max-width:1109px){
+@media screen and (min-width:320px) and (max-width:1109px) {
     .news_block__season {
         margin-bottom: 20px;
+    }
+
+    .news_block {
+        padding-bottom: 56px;
     }
 }
