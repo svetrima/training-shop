@@ -3,21 +3,21 @@ export const useful = [
     {
         id:1,
         name:'Terms & Conditions',
-        path:'NotFoundPage',
+        path:'TermsConditions',
     },
     {
         id:2,
         name:'Returns & Exchanges',
-        path:'NotFoundPage',
+        path:'ReturnsExchanges',
     },{
         id:3,
         name:'Shipping & Delivery',
-        path:'NotFoundPage',
+        path:'ShippingDelivery',
     },
        {
         id:4,
         name:'Privacy Policy',
-        path:'NotFoundPage',
+        path:'PrivacyPolicy',
     },
    
 ]

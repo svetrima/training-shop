@@ -2,36 +2,36 @@ export const NavMenu = [
     {
         id:1,
         name:'About Us',
-        path:'About Us',
+        path:'AboutUs',
     },
     {
         id:2,
         name:'Women',
-        path:'Women',
+        path:'women',
     },
     {
         id:3,
         name:'Men',
-        path:'Men',
+        path:'men',
     },
     {
         id:4,
         name:'Beauty',
-        path:'NotFoundPage',
+        path:'beauty',
     },
     {
         id:5,
         name:'Accessories',
-        path:'NotFoundPage',
+        path:'Accessories',
     },
     {
         id:6,
         name:'Blog',
-        path:'NotFoundPage',
+        path:'blog',
     },
     {
         id:7,
         name:'Contact',
-        path:'NotFoundPage',
+        path:'contact',
     },
 ]

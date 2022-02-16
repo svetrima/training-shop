@@ -2,23 +2,23 @@ export const information = [
     {
         id:1,
         name:'About Us',
-        path:'NotFoundPage',
+        path:'aboutus',
     },
     {
         id:2,
         name:'Contact Us',
-        path:'NotFoundPage',
+        path:'contactus',
     },
     {
         id:3,
         name:'Blog',
-        path:'NotFoundPage',
+        path:'blog',
     },
     
     {
         id:4,
         name:'FAQs',
-        path:'NotFoundPage',
+        path:'faqs',
     },
    
 ]
