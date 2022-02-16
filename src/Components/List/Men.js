@@ -3,7 +3,9 @@ import { men } from './CatalogMen';
 import { Link } from 'react-router-dom';
 
 function Men() {
+    const productType = ['men', 'women'];
     return (
+        <div className = 'clothes' data-test-id ={`clothes-${productType[0]}`}>
         <div className="layouts-4-columns cards_men">
             {men.map(element => {
                 return <Link to={`/${element.category}/${element.id}`} className='cards-item' data-test-id={`clothes-card-${element.category}`}><div className='card'>
@@ -18,7 +20,7 @@ function Men() {
                 </Link>
             })}
         </div>
-
+        </div>
     );
 
 }

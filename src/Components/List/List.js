@@ -7,6 +7,7 @@ import Filter from './Filter';
 
 function List() {
     return (
+
         <div className='wrapper'>
             <div className='cards'>
                 <div className='cards_content layouts-2-columns'>
@@ -28,6 +29,7 @@ function List() {
                 <button className='cards_btn__full'><span>see all</span></button>
             </div>
         </div>
+
     );
 }
 
