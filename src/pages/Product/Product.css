@@ -318,23 +318,11 @@ h4 {
         flex-wrap: wrap;
     }
 }*/
-@media screen and (min-width:375px) and (max-width:767px) {
-    .cards_content {
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (min-width:320px) and (max-width:768px) {
 
-    .cards_title {
-        margin-bottom: 10px;
-    }
-
-    .layouts-4-columns {
-        justify-content: space-evenly;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:374px) {
-    .cards {
-        padding-top: 46px;
+    .gallery_block,
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
