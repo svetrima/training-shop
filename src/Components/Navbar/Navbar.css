@@ -75,14 +75,14 @@ header {
 
 /***MEDIA***/
 /*media---1300рх до 768рх*/
-@media screen and (min-width:991px) and (max-width:1090px) {
+/*@media screen and (min-width:991px) and (max-width:1090px) {
     .wrapper {
         width: 900px;
     }
 }
 
 /*620*/
-@media screen and (min-width:360px) and (max-width:620px) {
+/*@media screen and (min-width:360px) and (max-width:620px) {
 
     li,
     .menu-item {
@@ -90,5 +90,11 @@ header {
     }
     .bars_item{
         flex-wrap: wrap;
+    }
+}*/
+
+@media screen and (min-width:375px) and (max-width:767px){
+    .logo{
+        padding-bottom:0;
     }
 }

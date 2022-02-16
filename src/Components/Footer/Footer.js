@@ -40,7 +40,8 @@ function Footer() {
                 </div>
             </div>
             <div className='footer_nav'>
-                <div className='layouts-4-columns wrapper'>
+                <div className='wrapper'>
+                <div className='layouts-4-columns'>
                     <div className='categories_links links'>
                         <h3>Categories</h3>
                         <ul className='links_list'>
@@ -73,6 +74,7 @@ function Footer() {
                                     <li><img src={img} alt='' /><span>{name}</span></li></Link>))}
                         </ul>
                     </div>
+                </div>
                 </div>
             </div>
 

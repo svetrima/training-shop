@@ -69,15 +69,19 @@ p {
 }
 
 /*790*/
-@media screen and (min-width:360px) and (max-width:887px) {
-    .news_block__season {
-        margin-bottom: 20px;
-    }
+/*@media screen and (min-width:360px) and (max-width:887px) {
+    
 }
 
 /*617*/
-@media screen and (min-width:360px) and (max-width:617px) {
+/*@media screen and (min-width:360px) and (max-width:617px) {
     .news_block {
         width: 360px;
+    }
+}*/
+
+@media screen and (min-width:375px) and (max-width:1109px){
+    .news_block__season {
+        margin-bottom: 20px;
     }
 }

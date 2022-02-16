@@ -287,7 +287,7 @@ h4 {
     margin-bottom:10px;
 }
  /*1100*/
- @media screen and (min-width:559px) and (max-width:1200px){
+/* @media screen and (min-width:559px) and (max-width:1200px){
   
     .gallery {
       flex-wrap: wrap;
@@ -295,7 +295,7 @@ h4 {
 
     }
      /*1100*/
- @media screen and (min-width:360px) and (max-width:558px){
+ /*@media screen and (min-width:360px) and (max-width:558px){
     .wrapper{
         width:360px;
         padding:0;
@@ -310,5 +310,17 @@ h4 {
     }
     .gallery_description__checkout .pay_links{
         flex-wrap: wrap;
+    }
+}*/
+@media screen and (min-width:375px) and (max-width:767px){
+    .cards_content{
+        flex-direction:column;
+        align-items: center;
+    }
+    .cards_title{
+        margin-bottom:10px;
+    }
+    .layouts-4-columns{
+justify-content: space-evenly;
     }
 }

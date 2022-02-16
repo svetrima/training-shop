@@ -60,19 +60,13 @@
 
 /***MEDIA***/
 /*media---1300рх до 768рх*/
-@media screen and (min-width:991px) and (max-width:1216px) {
-    .for_women {
-        left: -20px;
-    }
-
-    .for_men {
-        right: 32px;
-    }
+/*@media screen and (min-width:991px) and (max-width:1216px) {
+   
 
 }
 
 /*990*/
-@media (max-width:990px) {
+/*@media (max-width:990px) {
 
     .for_women,
     .for_men {
@@ -81,7 +75,7 @@
 }
 
 /*617*/
-@media screen and (min-width:360px) and (max-width:617px) {
+/*@media screen and (min-width:360px) and (max-width:617px) {
     .offer {
         width: 340px;
         height: 461px;
@@ -92,4 +86,28 @@
         justify-content: center;
         align-content: center;
     }
+}*/
+
+@media screen and (min-width:768px) and (max-width:1109px){
+    .for_women {
+        left: -20px;
+    }
+
+    .for_men {
+        right: 32px;
+    }
+}
+@media screen and (min-width:375px) and (max-width:767px){
+    .for_women, .for_men{
+        display: none;
+    }
+    .offer{
+        width:320px;
+        height:281px;
+        padding:0px 76px;
+    }
+    form, .offer_btn, input{
+width:100%;
+    }
+    
 }

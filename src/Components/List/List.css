@@ -88,7 +88,7 @@
 }
 
 /*990*/
-@media screen and (min-width:791px) and (max-width:990px) {
+/*@media screen and (min-width:791px) and (max-width:990px) {
     .cards .layouts-2-columns {
         justify-content: space-around;
     }
@@ -96,12 +96,18 @@
 }
 
 /*790*/
-@media screen and (min-width:360px) and (max-width:790px) {
+/*@media screen and (min-width:360px) and (max-width:790px) {
     .cards .layouts-2-columns {
         display: block;
     }
 
     .cards_title {
         margin-bottom: 20px;
+    }
+}*/
+
+@media screen and (min-width:768px) and (max-width:1109px){
+    .cards .layouts-2-columns {
+        justify-content: space-around;
     }
 }
