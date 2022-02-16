@@ -99,3 +99,134 @@ input::placeholder {
   text-align: center;
   padding-left: -16px;
 }
+/***MEDIA***/
+/*media---1300рх до 768рх*/
+@media screen and (min-width:1217px) and (max-width:1300px) {
+
+
+  .wrapper{
+      width:1110px;
+      padding-right:45px;
+      padding-left:45px;
+  }
+  /*.layouts-2-columns{
+    justify-content: center;
+  }*/
+  
+  .layouts-4-columns{
+    justify-content: space-evenly;
+  }
+  .footer_nav .layouts-4-columns{
+    justify-content: space-between;
+  }
+  }
+/*1090*/
+@media screen and (min-width:991px) and (max-width:1216px) {
+
+
+  .wrapper{
+      width:900px;
+      padding-right:30px;
+      padding-left:30px;
+  }
+  .layouts-2-columns{
+    justify-content: center;
+  }
+  .layouts-3-columns{
+    justify-content: space-around;
+  }
+  .layouts-4-columns:not(.footer_block__top){
+    justify-content: space-evenly;
+  }
+  }
+/*990*/
+@media screen and (min-width:791px) and (max-width:990px) {
+  .wrapper{
+    width:850px;
+    padding-right:10px;
+    padding-left:10px;
+  }
+  .layouts-3-columns{
+    justify-content: space-evenly;
+  }
+  .layouts-2-columns{
+    justify-content: center;
+  }
+  .layouts-4-columns{
+    justify-content: space-evenly;
+  }
+  }
+/*887*/
+  @media screen and (min-width:791px) and (max-width:887px){
+    .wrapper{
+      width:750px;
+      padding-right:10px;
+      padding-left:10px;
+    }
+    }
+    /*790*/
+  @media screen and (min-width:691px) and (max-width:790px){
+    .wrapper{
+      width:650px;
+      padding-right:10px;
+      padding-left:10px;
+    }
+    .layouts-2-columns{
+      justify-content: center;
+    }
+    .layouts-3-columns{
+      justify-content: center;
+    }
+    .layouts-4-columns{
+      justify-content: space-around;
+    }
+    }
+/*690*/
+    @media screen and (min-width:618px) and (max-width:690px){
+      .wrapper{
+        width:540px;
+        padding-right:10px;
+        padding-left:10px;
+      }
+      .layouts-2-columns{
+        justify-content: center;
+      }
+      .layouts-3-columns{
+        justify-content: center;
+      }
+      .layouts-4-columns{
+        justify-content: space-around;
+      }
+      }
+      /*617*/
+    @media screen and (min-width:558px) and (max-width:617px){
+      .wrapper{
+        width:520px;
+        padding-right:10px;
+        padding-left:10px;
+      }
+      .layouts-2-columns{
+        justify-content: center;
+      }
+      .layouts-3-columns{
+        justify-content: center;
+      }
+      .layouts-4-columns{
+        justify-content: space-around;
+      }
+      }
+         /*617*/
+    @media screen and (min-width:360px) and (max-width:557px){
+      .wrapper{
+        width:360px;
+      }
+      .layouts-2-columns{
+        justify-content: center;
+      }
+      .layouts-3-columns{
+        justify-content: center;
+      }
+      .layouts-4-columns{
+        justify-content: space-around;
+      }
+      }

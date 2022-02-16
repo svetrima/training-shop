@@ -236,6 +236,7 @@ h4 {
 
 .review_sub {
     margin-bottom: 24px;
+    align-items: baseline;
 }
 
 .review_block {
