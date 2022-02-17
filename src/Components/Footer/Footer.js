@@ -30,7 +30,7 @@ function Footer() {
                         <button className='footer_btn btn'>join us</button>
                     </div>
                     <div className='social_links'>
-                        <ul class="nav_top__icon">
+                        <ul className="nav_top__icon">
                             <li><img src={facebook} alt="fb" /></li>
                             <li><img src={twitter} alt="tw" /></li>
                             <li><img src={instagram} alt="inst" /></li>

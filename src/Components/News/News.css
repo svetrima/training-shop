@@ -62,15 +62,23 @@ p {
 }
 
 /*990*/
-@media screen and (min-width:791px) and (max-width:990px) {
+@media screen and (min-width:360px) and (max-width:990px) {
     .news_block__season {
         margin-bottom: 20px;
     }
 }
 
 /*790*/
-/*@media screen and (min-width:360px) and (max-width:887px) {
-    
+@media screen and (min-width:360px) and (max-width:790px) {
+
+    .news_block__season,
+    .news_block__sale {
+        width: 340px;
+    }
+
+    .news_block .banner {
+        width: 280px;
+    }
 }
 
 /*617*/
@@ -78,9 +86,11 @@ p {
     .news_block {
         width: 360px;
     }
-}*/
+}
 
-@media screen and (min-width:320px) and (max-width:1109px) {
+
+/*******************************************************************************************/
+/*@media screen and (min-width:320px) and (max-width:1109px) {
     .news_block__season {
         margin-bottom: 20px;
     }
@@ -88,4 +98,4 @@ p {
     .news_block {
         padding-bottom: 56px;
     }
-}
+}*/

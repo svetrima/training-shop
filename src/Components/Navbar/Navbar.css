@@ -75,25 +75,37 @@ header {
 
 /***MEDIA***/
 /*media---1300рх до 768рх*/
-/*@media screen and (min-width:991px) and (max-width:1090px) {
+@media screen and (min-width:991px) and (max-width:1090px) {
     .wrapper {
         width: 900px;
     }
 }
 
 /*620*/
-/*@media screen and (min-width:360px) and (max-width:620px) {
+@media screen and (min-width:360px) and (max-width:620px) {
+    .logo {
+        padding-bottom: 0;
+    }
 
     li,
     .menu-item {
         font-size: 10px;
     }
-    .bars_item{
-        flex-wrap: wrap;
-    }
-}*/
 
-@media screen and (min-width:375px) and (max-width:767px) {
+    .bars_item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav_main .menu-item {
+        padding: 5px 0;
+    }
+}
+
+
+
+/***********************************************************************************/
+/*@media screen and (min-width:375px) and (max-width:767px) {
     .logo {
         padding-bottom: 0;
     }
@@ -112,4 +124,4 @@ header {
     .nav_main .menu-item {
         padding: 5px 0;
     }
-}
+}*/
