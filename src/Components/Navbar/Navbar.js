@@ -15,9 +15,15 @@ import Cart from './assets/shopping-bag.png';
 
 import { Link } from 'react-router-dom';
 import { NavMenu } from './NavLinkData';
+import { useState } from 'react';
+import classNames from "classnames";
 
 
 function Navbar() {
+    const [isMenuOpen, toggleMenu] = useState(false);
+    const showMenu = () => toggleMenu(!isMenuOpen);
+
+
     return (
 
         <nav className='nav_block'>
@@ -41,7 +47,7 @@ function Navbar() {
                     <div className='logo' data-test-id='header-logo-link'>
                         <Link to='/'><img src={Logo} alt='CleverShop' /></Link>
                     </div>
-                    <ul className="bars_item" data-test-id='menu'>
+                    <ul className={classNames('bars_item', { 'bars_item__show': isMenuOpen })} data-test-id='burger-menu'>
                         {NavMenu.map(({ id, name, path }) => (
                             <Link key={id} to={`/${path}`} className={'menu-item'} data-test-id={`menu-link-${path}`}>
                                 <li>{name}</li></Link>
@@ -53,6 +59,12 @@ function Navbar() {
                         <li><img src={User} alt="user" /></li>
                         <li><img src={Cart} alt="cart" /></li>
                     </ul>
+
+                    <div className={classNames('burger', { 'show': isMenuOpen })} data-test-id='burger-menu-btn' onClick={showMenu}>
+                        <span></span>
+                    </div>
+                    <div className={isMenuOpen ? 'overlay_show' : 'overlay'} onClick={() => toggleMenu(!isMenuOpen)}></div>
+
                 </div>
             </div>
 
