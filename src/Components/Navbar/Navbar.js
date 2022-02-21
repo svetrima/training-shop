@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom';
 import { NavMenu } from './NavLinkData';
 import { useState } from 'react';
 import classNames from "classnames";
+import './Burger.css';
 
 
 function Navbar() {
