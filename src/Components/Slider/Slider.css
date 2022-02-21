@@ -1,17 +1,33 @@
-.arrow {
-    position: absolute;
+.swiper-button-prev,
+.swiper-button-next {
     width: 40px;
     height: 40px;
-    top: 45%;
-    cursor: pointer;
+    background-repeat: no-repeat;
 }
 
-.arrow_left {
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev {
     background-image: url('./assets/arrow_left.png');
     left: 24px;
 }
 
-.arrow_right {
+.main_block .swiper-button-next {
     background-image: url('./assets/arrow_right.png');
     right: 24px;
+}
+
+.swiper {
+    margin-left: 0;
+    margin-right: 0;
+    position: unset;
+}
+
+.main_block .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
