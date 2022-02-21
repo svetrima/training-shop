@@ -11,10 +11,10 @@ function Header() {
             <div className='header_content layouts-2-columns' data-test-id='header'>
                 <div className='main_block'>
                     <Slider />
-                    <div className='main_block__banner banner'>
+                   {/* <div className='main_block__banner banner'>
                         <p>banner</p>
                         <h2>your title text</h2>
-                    </div>
+                    </div>*/}
                 </div>
                 <div className='sub_block layouts-2-columns'>
                     <div className='sub_block__women'>

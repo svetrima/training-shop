@@ -8,6 +8,7 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
+    position: absolute;
 }
 
 .swiper-button-prev {

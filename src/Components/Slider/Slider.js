@@ -1,9 +1,9 @@
 import React from 'react';
-import './Slider.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css';
+import './Slider.css';
 import slid from '../Header/assets/header_main.jpg';
 import '../Header/Header.css'
 
