@@ -1,5 +1,8 @@
 .breadcrumbs {
     background-color: #F8F8F8;
+}
+
+.breadcrumbs .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -80,6 +83,6 @@ h2 {
 
 @media screen and (min-width:358px) and (max-width:558px) {
     .filter_bestseller {
-       display: none;
+        display: none;
     }
 }

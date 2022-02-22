@@ -47,15 +47,21 @@ function Product() {
             <div className='page-product' data-test-id={`product-page-${productType}`}>
                 <Breadcrumbs />
                 <div className='head_product'>
-                    <div className='main_title wrapper'><h2>Women's tracksuit Q109</h2></div>
-                    <div className='preview_info layouts-2-columns wrapper'>
-                        <div className='preview_rating'>
-                            <img src={fullrating} alt='rating' />
-                            <span className='count_review'>2 reviews</span>
+                    <div className='main_title'>
+                        <div className='wrapper'>
+                            <h2>Women's tracksuit Q109</h2>
                         </div>
-                        <div className='preview_sku layouts-2-columns'>
-                            <div className='sku_article'>SKU:<span>777</span></div>
-                            <div className='sku_available'>Availability:<span>In Stock</span></div>
+                    </div>
+                    <div className='preview_info'>
+                        <div className='wrapper layouts-2-columns'>
+                            <div className='preview_rating'>
+                                <img src={fullrating} alt='rating' />
+                                <span className='count_review'>2 reviews</span>
+                            </div>
+                            <div className='preview_sku layouts-2-columns'>
+                                <div className='sku_article'>SKU:<span>777</span></div>
+                                <div className='sku_available'>Availability:<span>In Stock</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>

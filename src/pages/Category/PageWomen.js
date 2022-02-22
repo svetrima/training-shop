@@ -19,7 +19,11 @@ function PageWomen() {
             <div className='products-page' data-test-id={`products-page-${productType}`}>
                 <Breadcrumbs />
 
-                <div className='main_title wrapper'><h2>Women</h2></div>
+                <div className='main_title'>
+                    <div className='wrapper'>
+                        <h2>Women</h2>
+                    </div>
+                </div>
                 <div className='wrapper'>
                     <div className='filter_panel'>
                         <div className='filter'><img src={filter} alt='filter' /><span>Filter</span></div>
