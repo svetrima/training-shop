@@ -68,13 +68,13 @@
         top: 103px;
         transition: all 0.4s linear;
         z-index: 99;
-        background-color: rgba(202, 197, 197, 0.4);
+        background-color: rgba(249, 243, 243, 0.1);
         transform: translateX(-100%);
     }
 
     .bars_item__show {
         z-index: 99;
-        transform: translateX(10%);
+        transform: translateX(0);
         transition: all 0.3s linear;
     }
 
@@ -89,7 +89,7 @@
     }
 
     .overlay_show {
-        background-color: rgba(202, 197, 197, 0.5);
+        background-color: rgba(235, 235, 235, 0.5);
         position: fixed;
         width: 100vw;
         height: 100vh;
