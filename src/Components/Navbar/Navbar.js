@@ -66,7 +66,7 @@ function Navbar() {
                     <div className={classNames('burger', { 'show': isMenuOpen })} data-test-id='burger-menu-btn' onClick={showMenu}>
                         <span></span>
                     </div>
-                    <div className={isMenuOpen ? 'overlay_show' : 'overlay'} onClick={() => toggleMenu(!isMenuOpen)}></div>
+                    <div className={isMenuOpen ? 'overlay_show' : 'overlay'} onClick={() => toggleMenu(!isMenuOpen)} data-test-id='burger-menu-btn'></div>
 
                 </div>
             </div>
