@@ -35,9 +35,10 @@ import choice2 from './assets/choice_3.png';
 import choice3 from './assets/choice_4.png';
 import message from './assets/icons/annotation.png';
 import { info } from './Info';
-import { related } from './RelatedProduct';
-import { Link } from 'react-router-dom';
+//import { related } from './RelatedProduct';
+//import { Link } from 'react-router-dom';
 import SliderProduct from '../../Components/Slider/SliderProduct';
+import SliderRelated from '../../Components/Slider/SliderRelated';
 
 
 function Product() {
@@ -209,7 +210,8 @@ function Product() {
                             </div>
                         </div>
                     </div>
-                    <div className='gallery_related'>
+                    <SliderRelated />
+                    {/*  <div className='gallery_related'>
                         <div className='gallery_related__title layouts-2-columns'>
                             <h2>related products</h2>
                             <div className='paginaition layouts-2-columns'>
@@ -232,7 +234,7 @@ function Product() {
                                 </Link>
                             })}
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
             <Footer />
