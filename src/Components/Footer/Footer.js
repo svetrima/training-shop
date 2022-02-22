@@ -78,8 +78,8 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='footer_bottom wrapper'>
-                <div className='layouts-3-columns'>
+            <div className='footer_bottom'>
+                <div className='layouts-3-columns wrapper'>
                     <div className='copyright'>Copyright В© 2032 all rights reserved</div>
                     <div className='pay'>
                         <ul className='pay_links'>

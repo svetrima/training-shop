@@ -1,7 +1,10 @@
-.footer_block__top .layouts-3-columns {
+.footer_block__top {
     background-color: #121212;
-    height: 56px;
+    
+}
+.footer_block__top .layouts-3-columns {
     align-items: center;
+    height: 56px;
 }
 
 .form_title {
