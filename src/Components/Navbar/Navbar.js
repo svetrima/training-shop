@@ -44,9 +44,9 @@ function Navbar() {
                 </ul>
                 </div>
             </div>
-            <div className='nav_main wrapper'>
+            <div className='nav_main'>
 
-                <div className='nav_main__bars layouts-3-columns'>
+                <div className='nav_main__bars layouts-3-columns wrapper'>
                     <div className='logo' data-test-id='header-logo-link'>
                         <Link to='/'><img src={Logo} alt='CleverShop' /></Link>
                     </div>

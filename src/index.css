@@ -109,7 +109,7 @@ input::placeholder {
     padding-left: 45px;
   }
 
-  .layouts-2-columns {
+  .layouts-2-columns:not(.sub_block) {
     justify-content: center;
   }
 
