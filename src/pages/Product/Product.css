@@ -61,6 +61,7 @@
 .gallery_block__preview {
     position: relative;
     height: 560px;
+    width:448px;
 }
 
 .clothes_description__color h4,

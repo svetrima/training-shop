@@ -16,7 +16,7 @@
     left: 24px;
 }
 
-.main_block .swiper-button-next {
+ .swiper-button-next {
     background-image: url('./assets/arrow_right.png');
     right: 24px;
 }
