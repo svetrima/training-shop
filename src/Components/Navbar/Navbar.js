@@ -22,7 +22,10 @@ import './Burger.css';
 
 function Navbar() {
     const [isMenuOpen, toggleMenu] = useState(false);
-    const showMenu = () => toggleMenu(!isMenuOpen);
+    const showMenu = () => {
+         isMenuOpen ? document.body.style.overflow = 'visible': document.body.style.overflow = 'hidden';
+         toggleMenu(!isMenuOpen)
+    };
 
 
     return (
@@ -65,8 +68,9 @@ function Navbar() {
 
                     <div className={classNames('burger', { 'show': isMenuOpen })} data-test-id='burger-menu-btn' onClick={showMenu}>
                         <span></span>
+                        <div className={isMenuOpen ? 'overlay_show' : 'overlay'} onClick={() => toggleMenu(!isMenuOpen)}></div>
                     </div>
-                    <div className={isMenuOpen ? 'overlay_show' : 'overlay'} onClick={() => toggleMenu(!isMenuOpen)} data-test-id='burger-menu-btn'></div>
+                    
 
                 </div>
             </div>
