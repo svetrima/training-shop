@@ -10,6 +10,10 @@
     margin-right: 16px;
 }
 
+.gallery_block__choose .layouts-2-columns {
+    flex-wrap: wrap;
+}
+
 .gallery,
 .gallery_block {
     flex-wrap: nowrap;

@@ -33,6 +33,14 @@
     height: 100%;
 }
 
+.swipers {
+    height: 500px;
+}
+
+.swipers .swiper-slide-active {
+    border: 1px solid black;
+}
+
 @media screen and (min-width:991px) and (max-width:1216px) {
     .main_block .slides img {
         width: 720px;

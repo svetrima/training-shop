@@ -5,7 +5,7 @@ import '../Category/Category.css';
 import Breadcrumbs from '../Category/Breadcrumbs';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import Slider from '../../Components/Slider/Slider';
+//import Slider from '../../Components/Slider/Slider';
 import like from './assets/icons/like.png';
 import hanger from './assets/icons/hanger.png';
 import scales from './assets/icons/scales.png';
@@ -20,10 +20,10 @@ import mastercard from './assets/icons/mastercard_x42.png';
 import discover from './assets/icons/discover_x42.png';
 import americanexpress from './assets/icons/american-express_x42.png';
 import fullrating from './assets/full_rating.png';
-import mediumActive from './assets/medium_active.png';
-import medium1 from './assets/medium_1.png';
-import medium2 from './assets/medium_2.png';
-import medium3 from './assets/medium_3.png';
+//import mediumActive from './assets/medium_active.png';
+//import medium1 from './assets/medium_1.png';
+//import medium2 from './assets/medium_2.png';
+//import medium3 from './assets/medium_3.png';
 import full from './assets/full.png';
 import sizeActive from './assets/icons/size_active.png';
 import sizeXS from './assets/icons/size_XS.png';
@@ -37,6 +37,7 @@ import message from './assets/icons/annotation.png';
 import { info } from './Info';
 import { related } from './RelatedProduct';
 import { Link } from 'react-router-dom';
+import SliderProduct from '../../Components/Slider/SliderProduct';
 
 
 function Product() {
@@ -69,20 +70,21 @@ function Product() {
                 <div className='wrapper'>
                     <div className='gallery layouts-2-columns'>
                         <div className='gallery_block layouts-2-columns'>
-
-                            <div className='gallery_block__choose'>
+<SliderProduct />
+                          {/*  <div className='gallery_block__choose'>
                                 <div className='paginaition layouts-2-columns'>
                                     <div className='chevron chevron_up'></div>
                                     <div className='chevron chevron_down'></div>
                                 </div>
+
                                 <img src={mediumActive} alt='active' />
                                 <img src={medium1} alt='medium1' />
                                 <img src={medium2} alt='medium2' />
                                 <img src={medium3} alt='medium3' />
-                            </div>
+                            </div> */}
                             <div className='gallery_block__preview'>
                                 <img src={full} alt='' />
-                                <Slider />
+                              {/*   <Slider />*/}
                             </div>
                         </div>
                         <div className='gallery_description'>
