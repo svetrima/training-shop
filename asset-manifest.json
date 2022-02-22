@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.25bcf0c1.css",
-    "main.js": "/training-shop/static/js/main.a28fc3a4.js",
+    "main.css": "/training-shop/static/css/main.0d260b9e.css",
+    "main.js": "/training-shop/static/js/main.245527de.js",
     "static/media/women.png": "/training-shop/static/media/women.45f56053b659a2d2bdd8.png",
     "static/media/header_main.jpg": "/training-shop/static/media/header_main.ba5d4eb3d9420781b5f8.jpg",
     "static/media/full.png": "/training-shop/static/media/full.9b54540601de97cc22e6.png",
@@ -37,11 +37,11 @@
     "static/media/medium_active.png": "/training-shop/static/media/medium_active.175f851307bd2795636e.png",
     "static/media/medium_2.png": "/training-shop/static/media/medium_2.cea3a89950f84dd2ee58.png",
     "index.html": "/training-shop/index.html",
-    "main.25bcf0c1.css.map": "/training-shop/static/css/main.25bcf0c1.css.map",
-    "main.a28fc3a4.js.map": "/training-shop/static/js/main.a28fc3a4.js.map"
+    "main.0d260b9e.css.map": "/training-shop/static/css/main.0d260b9e.css.map",
+    "main.245527de.js.map": "/training-shop/static/js/main.245527de.js.map"
   },
   "entrypoints": [
-    "static/css/main.25bcf0c1.css",
-    "static/js/main.a28fc3a4.js"
+    "static/css/main.0d260b9e.css",
+    "static/js/main.245527de.js"
   ]
 }
