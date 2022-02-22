@@ -4,7 +4,9 @@
         height: 40px;
         cursor: pointer;
         position: relative;
-        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
     }
 
     .burger span,

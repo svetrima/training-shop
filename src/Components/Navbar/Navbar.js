@@ -29,7 +29,8 @@ function Navbar() {
 
         <nav className='nav_block'>
 
-            <div className='nav_top wrapper layouts-2-columns'>
+            <div className='nav_top'>
+                <div className='wrapper layouts-2-columns'>
                 <ul className='nav_top__list'>
                     <li><img src={Phone} alt="phone" />+375 29 100 20 30</li>
                     <li><img src={Location} alt="location" />Belarus, Gomel, Lange 17</li>
@@ -41,6 +42,7 @@ function Navbar() {
                     <li><img src={instagram} alt="inst" /></li>
                     <li><img src={pinterest} alt="pint" /></li>
                 </ul>
+                </div>
             </div>
             <div className='nav_main wrapper'>
 

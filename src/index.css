@@ -229,7 +229,7 @@ input::placeholder {
     justify-content: center;
   }
 
-  .layouts-3-columns {
+  .layouts-3-columns:not(.nav_block .layouts-3-columns) {
     justify-content: center;
   }
 
@@ -249,7 +249,7 @@ input::placeholder {
     justify-content: center;
   }
 
-  .layouts-3-columns {
+  .layouts-3-columns:not(.nav_block .layouts-3-columns) {
     justify-content: center;
   }
 

@@ -72,7 +72,6 @@ header {
     flex-direction: row;
     align-items: center;
 }
-
 /***MEDIA***/
 /*media---1300рх до 768рх*/
 @media screen and (min-width:991px) and (max-width:1090px) {
@@ -80,14 +79,27 @@ header {
         width: 900px;
     }
 }
-
+@media screen and (min-width:320px) and (max-width:691px) {
+   .nav_top__list{
+       display:none;
+   }
+}
+@media screen and (min-width:320px) and (max-width:558px) {
+    .logo{
+        display:none;
+    }
+    .bars_icon{
+        padding:25px 0;
+        margin-right:30px;
+    }
+    .nav_main__bars{
+        justify-content: flex-end;
+    }
+    
+ }
 /*620*/
 @media screen and (min-width:360px) and (max-width:620px) {
-    .logo {
-        padding-bottom: 0;
-    }
-
-    li,
+      li,
     .menu-item {
         font-size: 10px;
     }
