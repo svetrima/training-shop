@@ -1,11 +1,14 @@
 .special {
+    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+    padding: 60px 0;
+}
+
+.special .wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
-    padding: 60px 0;
 }
 
 .offer {
@@ -44,8 +47,8 @@
     position: absolute;
     width: 311px;
     height: 546px;
-    bottom: 0;
-    left: 30px;
+    bottom: -60px;
+    left: 115px;
 }
 
 .for_men {
@@ -54,8 +57,8 @@
     position: absolute;
     width: 219px;
     height: 546px;
-    bottom: 0;
-    right: 72px;
+    top: -20px;
+    right: 172px;
 }
 
 /***MEDIA***/
@@ -97,7 +100,7 @@
     .offer {
         width: 300px;
         height: 281px;
-        padding: 0px 10px;
+        padding: 0px 18px;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
