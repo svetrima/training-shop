@@ -353,7 +353,12 @@ h4 {
         font-size: 12px;
     }
 }
-
+@media screen and (min-width:360px) and (max-width:560px) {
+    
+    .gallery_block__preview  {
+        width:329px;
+    }
+}
 /****************************************************************************************/
 /*@media screen and (min-width:320px) and (max-width:1109px) {
 

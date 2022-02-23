@@ -33,7 +33,7 @@ function SliderRelated() {
                         },
                         900: {
                             slidesPerView : 3,
-                            spaceBetween : 15
+                            spaceBetween : 10
                         },
                         1230: {
                             slidesPerView : 4,

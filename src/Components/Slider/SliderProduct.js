@@ -33,8 +33,8 @@ function SliderProduct() {
                         controller={{ control: secondSwiper }}
                         className='swipers'>
                         <SwiperSlide><img src={mediumActive} alt='active' /></SwiperSlide>
-                        <SwiperSlide className='vertical_slides'><img src={medium1} alt='medium1' /></SwiperSlide>
-                        <SwiperSlide className='vertical_slides'><img src={medium2} alt='medium2' /></SwiperSlide>
+                        <SwiperSlide ><img src={medium1} alt='medium1' /></SwiperSlide>
+                        <SwiperSlide ><img src={medium2} alt='medium2' /></SwiperSlide>
                         <SwiperSlide> <img src={medium3} alt='medium3' /></SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>

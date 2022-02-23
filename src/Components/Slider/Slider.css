@@ -65,4 +65,11 @@
     .gallery_block__choose {
         display: none;
     }
+   
+}
+@media screen and (min-width:561px) and (max-width:680px) {
+    
+    .gallery_block__preview .swipers {
+        width:520px;
+    }
 }
