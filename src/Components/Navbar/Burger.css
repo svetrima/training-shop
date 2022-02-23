@@ -70,12 +70,14 @@
         z-index: 99;
         background-color: rgba(249, 243, 243, 0.1);
         transform: translateX(-100%);
+        visibility: hidden;
     }
 
     .bars_item__show {
         z-index: 99;
         transform: translateX(0);
         transition: all 0.3s linear;
+        visibility: visible;
     }
 
     .bars_item li,
