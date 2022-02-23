@@ -23,7 +23,23 @@ function SliderRelated() {
                     modules={[Navigation]}
                     navigation={{ prevEl: '.chevron_prev', nextEl: '.chevron_next' }}
                     slidesPerView={4}
-                    spaceBetween={30}
+                    spaceBetween={10}
+                    breakpoints = {{
+                        340: {
+                            slidesPerView : 1
+                        },
+                        560: {
+                            slidesPerView : 2
+                        },
+                        900: {
+                            slidesPerView : 3,
+                            spaceBetween : 15
+                        },
+                        1230: {
+                            slidesPerView : 4,
+                            spaceBetween : 15
+                        },
+                    }}
                     className='swipers'>
                     {related.map(element => {
                         return <SwiperSlide><Link to={`/${element.category}/${element.id}`} className='cards-item'><div className='card'>
