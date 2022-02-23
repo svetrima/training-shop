@@ -28,6 +28,7 @@ function SliderProduct() {
                         navigation={{ prevEl: '.chevron_down', nextEl: '.chevron_up' }}
                         direction={'vertical'}
                         slidesPerView={4}
+                        spaceBetween={30}
                         onSwiper={setFirstSwiper}
                         controller={{ control: secondSwiper }}
                         className='swipers'>

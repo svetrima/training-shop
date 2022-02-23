@@ -33,13 +33,13 @@
     height: 100%;
 }
 
-.swipers {
-    height: 500px;
+/*.swipers {
+    height: 450px;
+}*/
+.gallery_block__choose .swipers, .gallery_block__preview .swipers {
+    height: 560px;
 }
 
-.swipers .swiper-slide-active {
-    border: 1px solid black;
-}
 
 @media screen and (min-width:991px) and (max-width:1216px) {
     .main_block .slides img {
