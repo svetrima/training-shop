@@ -21,13 +21,13 @@
     background-color: #F8F8F8;
 }
 
-h2 {
+.main_title h2 {
     font-weight: 600;
     font-size: 26px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     padding: 10px 0 24px;
 }
 
