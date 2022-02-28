@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductsPage from './ProductsPage';
+import { productsData } from './ProductsData';
 import Filter from './Filter';
 import './List.css';
 import '../../index.css';

@@ -39,6 +39,8 @@
 
 .card {
     margin-bottom: 30px;
+    width:255px;
+    overflow: hidden;
 }
 
 .card_item__title {
@@ -49,7 +51,10 @@
     text-align: left;
     opacity: 0.6;
 }
-
+.card img {
+    width:100%;
+    height: auto;
+}
 .card_item__description {
     display: flex;
     flex-direction: row;

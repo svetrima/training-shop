@@ -1,5 +1,5 @@
 import React from 'react';
-import { productsData } from './ProductsData';
+import { PRODUCTS } from './ProductsData';
 import { Link } from 'react-router-dom';
 
 
@@ -7,13 +7,13 @@ const ProductsPage = ({ typeProducts }) => {
     return (
         <div className='clothes' data-test-id={`clothes-${typeProducts}`}>
             <div className="layouts-4-columns cards_women">
-                {productsData[typeProducts].map(element => {
+                {PRODUCTS[typeProducts].map(element => {
                     return <Link to={`/${element.category}/${element.id}`} className='cards-item' data-test-id={`clothes-card-${element.category}`}><div className='card'>
-                        <img key={element.img} src={element.img} alt={element.title} />
+                        <img key={element.img} src={`https://training.cleverland.by/shop${element.images[0]?.url}`}  alt={element.title} />
                         <div className='card_content'>
-                            <h4 className='card_item__title'>{element.title}</h4>
+                            <h4 className='card_item__title'>{element.name}</h4>
                             <div className='card_item__description'>
-                                <span className='card_item__price'>{element.price}</span>
+                                <span className='card_item__price'>&#36; {element.price}</span>
                                 <img key={element.rating} src={element.rating} alt='rating' /></div>
                         </div>
                     </div>
