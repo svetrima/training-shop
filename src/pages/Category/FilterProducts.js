@@ -4,7 +4,7 @@ import classNames from "classnames";
 import grid from './assets/view-grid.png';
 import list from './assets/view-list.png';
 import filter from './assets/filter.png';
-import { PRODUCTS } from '../../Components/List/ProductsData';
+//import { PRODUCTS } from '../../Components/List/ProductsData';
 import './Category.css';
 
 function FilterProducts() {
