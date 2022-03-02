@@ -83,23 +83,77 @@ function FilterProducts() {
                     <div className='filter_block__content size_content'>
                         <ul>
                             <li>
-                                <input type='checkbox' id='xl' name='x' />
-                                <label for='xl'>XL</label>
+                                <input type='checkbox' id='xxs' name='xxs' />
+                                <label for='xxs'>XXS INT</label>
                             </li>
                             <li>
-                                <input type='checkbox' id='l' name='l' />
-                                <label for='l'>L</label>
-                            </li>
-                            <li>
-                                <input type='checkbox' id='m' name='m' />
-                                <label for='m'>M</label>
+                                <input type='checkbox' id='xs' name='xs' />
+                                <label for='xs'>XS INT</label>
                             </li>
                             <li>
                                 <input type='checkbox' id='s' name='s' />
-                                <label for='s'>S</label>
+                                <label for='s'>S INT</label>
                             </li>
-                            <li><input type='checkbox' id='xs' name='x' />
-                                <label for='xs'>XS</label></li>
+                            <li>
+                                <input type='checkbox' id='m' name='m' />
+                                <label for='m'>M INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='l' name='l' />
+                                <label for='l'>L INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='xl' name='xl' />
+                                <label for='xl'>XL INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='xxl' name='xxl' />
+                                <label for='xxl'>XXL INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='3xl' name='3xl' />
+                                <label for='3xl'>3XL INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='5xl' name='5xl' />
+                                <label for='5xl'>5XL INT</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='36/32g' name='36/32g' />
+                                <label for='36/32g'>36/32 GER</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='38/32g' name='38/32g' />
+                                <label for='38/32g'>38/32 GER</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='40/32g' name='40/32g' />
+                                <label for='40/32g'>40/32 GET</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='40r' name='40r' />
+                                <label for='40r'>40 RUS</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='42r' name='42r' />
+                                <label for='42r'>42 RUS</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='48r' name='48r' />
+                                <label for='48r'>48 RUS</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='32e' name='32e' />
+                                <label for='32e'>32 EUR</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='34e' name='34e' />
+                                <label for='34e'>34 EUR</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' id='36e' name='36e' />
+                                <label for='36e'>36 EUR</label>
+                            </li>
                         </ul>
                     </div>
                 </div>
