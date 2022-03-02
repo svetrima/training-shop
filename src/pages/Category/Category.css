@@ -95,7 +95,6 @@
     display: flex;
     transition: all 0.3s linear;
 }
-
 .filter_block__content input {
     width: 20px;
     height: unset;
@@ -106,12 +105,10 @@
     font-size: 13px;
     line-height: 34px;
     opacity: 0.8;
-
 }
 
 .filter_block__content {
     height: 230px;
-    border: 1px solid red;
     overflow-y: auto;
 }
 
