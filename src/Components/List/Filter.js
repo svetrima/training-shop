@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
+import { cardsFilterData } from './CardsFilterData';
 
-function Filter() {
-    const cardsFilter = ['new arrivals', 'specials', 'bestsellers', 'most viewed', 'featured products'];
+const Filter =()=> {
+
+
     return (
         <div className='cards_filter'>
-            {cardsFilter.map(element => {
-                return <span className='filter_tab'>{element}</span>;
+            {cardsFilterData.map(element => {
+                
+                 return <span className='filter_tab'>{element.name}</span>;
             })}
 
         </div>

@@ -1,13 +1,11 @@
 import React from 'react';
 import ProductsPage from './ProductsPage';
-import { productsData } from './ProductsData';
 import Filter from './Filter';
 import './List.css';
 import '../../index.css';
 
 const List = ({ typeProducts }) => {
     return (
-
         <div className='wrapper'>
             <div className='cards'>
                 <div className='cards_content layouts-2-columns'>
