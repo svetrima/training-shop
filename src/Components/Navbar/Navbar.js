@@ -55,7 +55,7 @@ function Navbar() {
                     </div>
                     <ul className={classNames('bars_item', { 'bars_item__show': isMenuOpen })} data-test-id='burger-menu'>
                         {NavMenu.map(({ id, name, path }) => (
-                            <Link key={id} to={`/${path}`} className={'menu-item'} data-test-id={`menu-link-${path}`} onClick={showMenu}>
+                            <Link key={id} to={`/${path}`} className={'menu-item'} data-test-id={`menu-link-${path}`} >
                                 <li>{name}</li></Link>
                         ))}
                     </ul>
