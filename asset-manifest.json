@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.1b12b185.css",
-    "main.js": "/training-shop/static/js/main.7b08287a.js",
+    "main.css": "/training-shop/static/css/main.4082b642.css",
+    "main.js": "/training-shop/static/js/main.2d3ede86.js",
     "static/media/women.png": "/training-shop/static/media/women.45f56053b659a2d2bdd8.png",
     "static/media/header_main.jpg": "/training-shop/static/media/header_main.ba5d4eb3d9420781b5f8.jpg",
     "static/media/full.png": "/training-shop/static/media/full.9b54540601de97cc22e6.png",
@@ -11,37 +11,21 @@
     "static/media/item_2.jpg": "/training-shop/static/media/item_2.653a844b906171bd2ee2.jpg",
     "static/media/season.png": "/training-shop/static/media/season.1c6ffb2792b7b7a01773.png",
     "static/media/header_bag.jpg": "/training-shop/static/media/header_bag.ee7f09dd43e5a9912d95.jpg",
-    "static/media/tracksuitQ109_5.jpg": "/training-shop/static/media/tracksuitQ109_5.363e0e8c20844e94187f.jpg",
     "static/media/1.jpg": "/training-shop/static/media/1.7472a839b6c5d7ed227c.jpg",
     "static/media/item_3.jpg": "/training-shop/static/media/item_3.5f7ce6ec287630e86bf9.jpg",
     "static/media/3.jpg": "/training-shop/static/media/3.b60f6932598e066e266e.jpg",
     "static/media/header_women.png": "/training-shop/static/media/header_women.cbee119685e91c164d5b.png",
     "static/media/2.jpg": "/training-shop/static/media/2.eb178076f9fffbe5ebf2.jpg",
     "static/media/4.jpg": "/training-shop/static/media/4.746180237ae3cebb8197.jpg",
-    "static/media/Q109_4.jpg": "/training-shop/static/media/Q109_4.77d37127a23a39a1a6be.jpg",
-    "static/media/tracksuitQ109_3.jpg": "/training-shop/static/media/tracksuitQ109_3.0b8f41098b08d3def626.jpg",
-    "static/media/Q109_3.jpg": "/training-shop/static/media/Q109_3.9e4cc095c5df0b51ea77.jpg",
-    "static/media/tracksuitQ109.jpg": "/training-shop/static/media/tracksuitQ109.e5b8870686f6058dc55f.jpg",
-    "static/media/Q109_8.jpg": "/training-shop/static/media/Q109_8.4c76b8bc9c2cf2360a23.jpg",
-    "static/media/Q109_6.jpg": "/training-shop/static/media/Q109_6.804791acb8ef31cbcfd0.jpg",
-    "static/media/tracksuitQ109_2.jpg": "/training-shop/static/media/tracksuitQ109_2.c54238646312eaa8b3c6.jpg",
-    "static/media/tracksuitQ109_6.jpg": "/training-shop/static/media/tracksuitQ109_6.28f8cc871006491fbe6f.jpg",
-    "static/media/Q109_7.jpg": "/training-shop/static/media/Q109_7.e886208ae1d42a61acfd.jpg",
     "static/media/header_men.png": "/training-shop/static/media/header_men.8155c56f7dd3f70c2963.png",
-    "static/media/tracksuitQ109_7.jpg": "/training-shop/static/media/tracksuitQ109_7.1a05b311f7288c6c0662.jpg",
-    "static/media/tracksuitQ109_8.jpg": "/training-shop/static/media/tracksuitQ109_8.47ad6cd3ba7fe24ef0b8.jpg",
-    "static/media/Q109.jpg": "/training-shop/static/media/Q109.a75c832247c4e48afd1b.jpg",
-    "static/media/Q109_2.jpg": "/training-shop/static/media/Q109_2.6b55c207db9f6a417283.jpg",
-    "static/media/Q109_5.jpg": "/training-shop/static/media/Q109_5.ba3f8ce5a8432748fc33.jpg",
-    "static/media/tracksuitQ109_4.jpg": "/training-shop/static/media/tracksuitQ109_4.46d31ed37fb679717554.jpg",
     "static/media/medium_active.png": "/training-shop/static/media/medium_active.175f851307bd2795636e.png",
     "static/media/medium_2.png": "/training-shop/static/media/medium_2.cea3a89950f84dd2ee58.png",
     "index.html": "/training-shop/index.html",
-    "main.1b12b185.css.map": "/training-shop/static/css/main.1b12b185.css.map",
-    "main.7b08287a.js.map": "/training-shop/static/js/main.7b08287a.js.map"
+    "main.4082b642.css.map": "/training-shop/static/css/main.4082b642.css.map",
+    "main.2d3ede86.js.map": "/training-shop/static/js/main.2d3ede86.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b12b185.css",
-    "static/js/main.7b08287a.js"
+    "static/css/main.4082b642.css",
+    "static/js/main.2d3ede86.js"
   ]
 }
