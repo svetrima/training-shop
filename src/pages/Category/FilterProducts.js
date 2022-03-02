@@ -23,6 +23,10 @@ function FilterProducts() {
                 <div className='filter_bestseller'>
                     <select>
                         <option value='bestsellers'>bestsellers</option>
+                        <option value='new arrivals'>new arrivals</option>
+                        <option value='specials'>specials</option>
+                        <option value='most viewed'>most viewed</option>
+                        <option value='featured products'>featured products</option>
                     </select>
                 </div>
 
