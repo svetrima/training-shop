@@ -31,13 +31,18 @@ function FilterProducts () {
                         <ul>
                            
                             <li>Black</li>
-                            <li>Cyan</li>
                             <li>Green</li>
                             <li>Grey</li>
-                            <li>Pink</li>
+                            <li>Brown</li>
+                            <li>Blue</li>
                             <li>White</li>
-                            <li>Pink</li>
-                            <li>White</li>
+                            <li>Multicolor</li>
+                            <li>Red</li>
+                            <li>Yellow</li>
+                            <li>Beige</li>
+                            <li>Vinous</li>
+                            <li>Turquoise</li>
+                            <li>Orange</li>
                         </ul>
                     </div>
                     <div className='filter_block__size' data-test-id='filters-size'>
