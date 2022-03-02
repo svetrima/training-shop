@@ -32,11 +32,13 @@
     margin-right: 0;
 }
 
-.filter_tab:first-child {
+/*.filter_tab:first-child {
     opacity: 1;
-    /*чисто декоративная фишка, пока нет логики*/
+    чисто декоративная фишка, пока нет логики
+}*/
+.filter_tab__show{
+    color:red;
 }
-
 .card {
     margin-bottom: 30px;
     width:255px;
