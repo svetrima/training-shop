@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductsPage from './ProductsPage';
 import Filter from './Filter';
 import './List.css';
 import '../../index.css';
