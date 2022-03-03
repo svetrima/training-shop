@@ -13,8 +13,8 @@ function App() {
         <Route path="/women" element={<Category typeProducts='women' />} />
         <Route path="/men" element={<Category typeProducts='men'/>} />
         <Route path="/NotFoundPage" element={<NotFoundPage />} />
-        <Route path="/men/:id" element={<Product />} />
-        <Route path="/women/:id" element={<Product />} />
+        <Route path="/men/:id" element={<Product typeProducts='men'/>} />
+        <Route path="/women/:id" element={<Product typeProducts='women'/>} />
       </Routes>
     </div>
   );

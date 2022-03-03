@@ -2,7 +2,6 @@ import React from 'react';
 import './Product.css';
 import '../../index.css';
 import '../Category/Category.css';
-import Breadcrumbs from '../Category/Breadcrumbs';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 //import Slider from '../../Components/Slider/Slider';
@@ -39,15 +38,24 @@ import { info } from './Info';
 //import { Link } from 'react-router-dom';
 import SliderProduct from '../../Components/Slider/SliderProduct';
 import SliderRelated from '../../Components/Slider/SliderRelated';
+import share from '../Category/assets/share.png';
+import { Link } from 'react-router-dom';
 
 
-function Product() {
-    const productType = ['women'];
+function Product({ typeProducts, id }) {
     return (
         <div>
             <Navbar />
-            <div className='page-product' data-test-id={`product-page-${productType}`}>
-                <Breadcrumbs />
+            <div className='page-product' data-test-id={`product-page-${typeProducts}`}>
+
+                <div className='breadcrumbs'>
+                    <div className='wrapper'>
+                        <div className='breadcrumbs_path'><Link to='/'><span>Home</span></Link> ► <Link to={`/${typeProducts}`}><span>{`${typeProducts}`}</span></Link> ► <span>{`${id}`}</span></div>
+                        <div className='breadcrumbs_share'><img src={share} alt='img' />Share</div>
+                    </div>
+                </div>
+
+
                 <div className='head_product'>
                     <div className='main_title'>
                         <div className='wrapper'>

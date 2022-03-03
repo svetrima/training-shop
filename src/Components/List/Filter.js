@@ -17,12 +17,12 @@ const Filter = ({ typeProducts }) => {
                         {cardsFilterData.map(element => {
                             return <span
                                 className={classNames('filter_tab', { 'filter_tab__show': element.particularName === filter })}
-                                value={element.particularName} onClick={() => setFilter(element.particularName)} >{element.name}</span>;
+                                value={element.particularName} onClick={() => setFilter(element.particularName)} data-test-id={`clothes-${typeProducts}-${element.particularName}`}>{element.name}</span>;
                         })}
                     </div>
                 </div>
                 <div className='clothes' data-test-id={`clothes-${typeProducts}`}>
-                    <div className="layouts-4-columns cards_women">
+                    <div className='layouts-4-columns'>
                         {PRODUCTS[typeProducts].filter((el) => el.particulars[filter]).map(element => {
                             return <Link to={`/${element.category}/${element.id}`} className='cards-item' data-test-id={`clothes-card-${element.category}`}><div className='card'>
                                 <img key={element.img} src={`https://training.cleverland.by/shop${element.images[0]?.url}`} alt={element.title} />
