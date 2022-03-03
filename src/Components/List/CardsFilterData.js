@@ -4,7 +4,7 @@ export const cardsFilterData = [
         name: 'new arrivals',
     },
     {
-        particularName: 'isSpecials',
+        particularName: 'isSpecial',
         name: 'specials',
     },
     {
