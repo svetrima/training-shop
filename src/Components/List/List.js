@@ -4,29 +4,11 @@ import Filter from './Filter';
 import './List.css';
 import '../../index.css';
 
-const List = ({ typeProducts }) => {
+const List = ({ typeProducts, filter }) => {
     return (
         <div className='wrapper'>
-            <div className='cards'>
-                <div className='cards_content layouts-2-columns'>
-                    <h3 className='cards_title'>Women's</h3>
-                    <Filter />
-                </div>
-                <ProductsPage typeProducts='women' />
-                <div className='cards_btn'>
-                    <button className='cards_btn__full'><span>see all</span></button>
-                </div>
-            </div>
-            <div className='cards'>
-                <div className='cards_content layouts-2-columns'>
-                    <h3 className='cards_title'>Men's</h3>
-                    <Filter />
-                </div>
-                <ProductsPage typeProducts='men' />
-                <div className='cards_btn'>
-                    <button className='cards_btn__full'><span>see all</span></button>
-                </div>
-            </div>
+            <Filter typeProducts='women' />
+            <Filter typeProducts='men' />
         </div>
     );
 }
