@@ -29,7 +29,7 @@ import share from '../Category/assets/share.png';
 import { Link, useParams } from 'react-router-dom';
 import { PRODUCTS } from '../../Components/List/ProductsData';
 import { useState } from 'react';
-import classNames from "classnames";
+//import classNames from "classnames";
 
 
 function Product({ typeProducts }) {
