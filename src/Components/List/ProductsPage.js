@@ -14,7 +14,7 @@ const ProductsPage = ({ typeProducts }) => {
                             <h4 className='card_item__title'>{element.name}</h4>
                             <div className='card_item__description'>
                                 <span className='card_item__price'>&#36; {element.price}</span>
-                                <img key={element.rating} src={`../assets/${element.rating}.png`} alt='rating' /></div>
+                                <img key={element.rating} src={`../assets/${element.rating}.png`} alt={element.rating} /></div>
                         </div>
                     </div>
                     </Link>

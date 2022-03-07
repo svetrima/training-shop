@@ -265,6 +265,9 @@ h4 {
 }
 
 /*review*/
+.gallery_description__review{
+    width:100%;
+}
 .review_info h3 {
     font-weight: 600;
     font-size: 12px;
@@ -325,6 +328,15 @@ h4 {
 
 .gallery_block__choose>div {
     margin-bottom: 10px;
+}
+
+.gallery_related__title h2{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
 }
 
 /*1100*/
