@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './Product.css';
 import '../../index.css';
 import '../Category/Category.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-//import Slider from '../../Components/Slider/Slider';
 import like from './assets/icons/like.png';
 import hanger from './assets/icons/hanger.png';
 import scales from './assets/icons/scales.png';
@@ -19,30 +18,51 @@ import mastercard from './assets/icons/mastercard_x42.png';
 import discover from './assets/icons/discover_x42.png';
 import americanexpress from './assets/icons/american-express_x42.png';
 import fullrating from './assets/full_rating.png';
-//import mediumActive from './assets/medium_active.png';
-//import medium1 from './assets/medium_1.png';
-//import medium2 from './assets/medium_2.png';
-//import medium3 from './assets/medium_3.png';
-//import full from './assets/full.png';
-import sizeActive from './assets/icons/size_active.png';
-import sizeXS from './assets/icons/size_XS.png';
-import sizeM from './assets/icons/size_M.png';
-import sizeL from './assets/icons/size_L.png';
 import choiceActive from './assets/choise_active.png';
 import choice1 from './assets/choice_2.png';
 import choice2 from './assets/choice_3.png';
 import choice3 from './assets/choice_4.png';
 import message from './assets/icons/annotation.png';
-import { info } from './Info';
-//import { related } from './RelatedProduct';
-//import { Link } from 'react-router-dom';
 import SliderProduct from '../../Components/Slider/SliderProduct';
 import SliderRelated from '../../Components/Slider/SliderRelated';
 import share from '../Category/assets/share.png';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { PRODUCTS } from '../../Components/List/ProductsData';
+import { useState } from 'react';
+import classNames from "classnames";
 
 
-function Product({ typeProducts, id }) {
+function Product({ typeProducts }) {
+    const params = useParams();
+    const productId = params.id;
+
+    const color = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map(({ color }) => color)).flat())]
+    );
+    const material = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))]
+    );
+    const size = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(','));
+    const brand = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.brand))]
+    );
+    const price = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))]
+    );
+    const reviews = useMemo(
+        () =>
+            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())]
+    );
+    const [sizeValue, setSizeValue] = useState(size[0]);
+    const showSize = () => {
+        setSizeValue(sizeValue)
+    };
     return (
         <div>
             <Navbar />
@@ -50,23 +70,28 @@ function Product({ typeProducts, id }) {
 
                 <div className='breadcrumbs'>
                     <div className='wrapper'>
-                        <div className='breadcrumbs_path'><Link to='/'><span>Home</span></Link> ► <Link to={`/${typeProducts}`}><span>{`${typeProducts}`}</span></Link> ► <span>{`${id}`}</span></div>
+                        <div className='breadcrumbs_path'><Link to='/'><span>Home</span></Link> ► <Link to={`/${typeProducts}`}><span>{`${typeProducts}`}</span></Link> ►
+                            {PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => (
+                                <span>{el.name}</span>
+                            ))}
+                        </div>
                         <div className='breadcrumbs_share'><img src={share} alt='img' />Share</div>
                     </div>
                 </div>
 
-
                 <div className='head_product'>
                     <div className='main_title'>
                         <div className='wrapper'>
-                            <h2>Women's tracksuit Q109</h2>
+                            {PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => (
+                                <h2>{el.name}</h2>
+                            ))}
                         </div>
                     </div>
                     <div className='preview_info'>
                         <div className='wrapper layouts-2-columns'>
                             <div className='preview_rating'>
                                 <img src={fullrating} alt='rating' />
-                                <span className='count_review'>2 reviews</span>
+                                <span className='count_review'>{reviews.length} reviews</span>
                             </div>
                             <div className='preview_sku layouts-2-columns'>
                                 <div className='sku_article'>SKU:<span>777</span></div>
@@ -80,28 +105,13 @@ function Product({ typeProducts, id }) {
                     <div className='gallery layouts-2-columns'>
 
                         <SliderProduct />
-                        {/*  <div className='gallery_block__choose'>
-                                <div className='paginaition layouts-2-columns'>
-                                    <div className='chevron chevron_up'></div>
-                                    <div className='chevron chevron_down'></div>
-                                </div>
-
-                                <img src={mediumActive} alt='active' />
-                                <img src={medium1} alt='medium1' />
-                                <img src={medium2} alt='medium2' />
-                                <img src={medium3} alt='medium3' />
-                            </div> */}
-                        {/*   <div className='gallery_block__preview'>
-                                <img src={full} alt='' />
-                                <Slider />
-                            </div>*/}
 
                         <div className='gallery_description'>
                             <div className='clothes_description'>
                                 <div className='clothes_description__color'>
                                     <div className='color_title'>
                                         <h4>color:</h4>
-                                        <span className='colorful_title'>Blue</span>
+                                        <span className='colorful_title'>{color}</span>
                                     </div>
                                     <div className='color_choice'>
                                         <img src={choiceActive} alt='active' />
@@ -116,11 +126,9 @@ function Product({ typeProducts, id }) {
                                         <span className='size'>S</span>
                                     </div>
                                     <div className='size_choice'>
-                                        <img src={sizeXS} alt='sizeXS' />
-                                        <img src={sizeActive} alt='active' />
-                                        <img src={sizeM} alt='sizeM' />
-                                        <img src={sizeL} alt='sizeL' />
-
+                                        {size.map((el) => {
+                                            return <button key={el} className={classNames('size_btn btn', { 'size_btn__active': el === sizeValue })} onClick={showSize}><span>{el}</span></button>
+                                        })}
                                     </div>
                                     <div className='size_guide'>
                                         <span><img src={hanger} alt='hanger' /> Size quide</span>
@@ -128,7 +136,7 @@ function Product({ typeProducts, id }) {
                                 </div>
                             </div>
                             <div className='gallery_description__price'>
-                                <span className='cost'>$ 379.99</span>
+                                <span className='cost'>$ {price}</span>
                                 <button className='product_btn btn'>add to card</button>
                                 <span><img src={like} alt='like' /></span>
                                 <span><img src={scales} alt='scales' /></span>
@@ -166,9 +174,15 @@ function Product({ typeProducts, id }) {
                                 <div className='description_details'>
                                     <h3>additional information</h3>
                                     <ul>
-                                        {info.map(element => {
-                                            return <li><span className='description_details__title'>{element.name}:</span><span className='description_details__content'>{element.detail}</span></li>
-                                        })}
+                                        <li><span className='description_details__title'>Color:</span>
+                                            <span className='description_details__content'>{color}</span>
+                                        </li>
+                                        <li>
+                                            <span className='description_details__title'>Size:</span><span className='description_details__content'>{size.toString()}</span>
+                                        </li>
+                                        <li>
+                                            <span className='description_details__title'>Material:</span><span className='description_details__content'>{material}</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -178,71 +192,31 @@ function Product({ typeProducts, id }) {
                                     <div className='review_sub layouts-2-columns'>
                                         <div className='rating_info'>
                                             <img src={fullrating} alt='rating' />
-                                            <span className='count_review'>2 reviews</span>
+                                            <span className='count_review'>{reviews.length} reviews</span>
                                         </div>
                                         <div className='new_review'>
                                             <img src={message} alt='message' />
                                             <span className='add_review'>Write a review</span>
-
                                         </div>
                                     </div>
-                                    <div className='review_block'>
-                                        <div className='review_block__title layouts-2-columns'>
-                                            <h4 className='user_title'>Oleh Chabanov</h4>
-                                            <div className='rating_info'>
-                                                <span className='date_review'>3 months ago</span>
-                                                <img src={fullrating} alt='rating' /></div>
-                                        </div>
-                                        <div className='user_content'>
-                                            <p>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='review_block'>
-                                        <div className='review_block__title layouts-2-columns'>
-                                            <h4 className='user_title'>ShAmAn design</h4>
-                                            <div className='rating_info'>
-                                                <span className='date_review'>3 months ago</span>
-                                                <img src={fullrating} alt='rating' />
+                                    {reviews.map((el) => {
+                                        return <div className='review_block'>
+                                            <div className='review_block__title layouts-2-columns'>
+                                                <h4 className='user_title'>{el.name}</h4>
+                                                <div className='rating_info'>
+                                                    <span className='date_review'>3 months ago</span>
+                                                    <img src={fullrating} alt={el.rating} /></div>
+                                            </div>
+                                            <div className='user_content'>
+                                                <p>{el.text}</p>
                                             </div>
                                         </div>
-
-
-                                        <div className='user_content'>
-                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
-                                        </div>
-
-                                    </div>
+                                    })}
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <SliderRelated />
-                    {/*  <div className='gallery_related'>
-                        <div className='gallery_related__title layouts-2-columns'>
-                            <h2>related products</h2>
-                            <div className='paginaition layouts-2-columns'>
-                                <div className='chevron chevron_prev'></div>
-                                <div className='chevron chevron_next'></div>
-                            </div>
-
-                        </div>
-                        <div className='gallery_related__block layouts-4-columns'>
-                            {related.map(element => {
-                                return <Link to={`/${element.category}/${element.id}`} className='cards-item'><div className='card'>
-                                    <img key={element.img} src={element.img} alt={element.title} />
-                                    <div className='card_content'>
-                                        <h4 className='card_item__title'>{element.title}</h4>
-                                        <div className='card_item__description'>
-                                            <span className='card_item__price'>{element.price}</span>
-                                            <img key={element.rating} src={element.rating} alt='rating' /></div>
-                                    </div>
-                                </div>
-                                </Link>
-                            })}
-                        </div>
-                    </div>*/}
                 </div>
             </div>
             <Footer />

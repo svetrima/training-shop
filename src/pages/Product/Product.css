@@ -61,7 +61,7 @@
 .gallery_block__preview {
     position: relative;
     height: 560px;
-    width:448px;
+    width: 448px;
 }
 
 .clothes_description__color h4,
@@ -125,6 +125,36 @@ h4 {
     font-size: 12px;
     line-height: 18px;
     opacity: 0.6;
+}
+
+/*Size btn */
+.size_btn {
+    width: unset;
+    background: #F8F8F8;
+    margin-right: 16px;
+
+}
+
+.size_btn span,
+.size_btn__active {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 15px;
+}
+
+.size_btn span {
+    color: #121212;
+}
+
+.size_btn__active {
+    background: #FFFFFF;
+    border: 2px solid #121212;
+    box-sizing: border-box;
+}
+
+.size_btn__active span {
+    color: #121212;
 }
 
 /*Price*/
@@ -353,12 +383,14 @@ h4 {
         font-size: 12px;
     }
 }
+
 @media screen and (min-width:360px) and (max-width:560px) {
-    
-    .gallery_block__preview  {
-        width:329px;
+
+    .gallery_block__preview {
+        width: 329px;
     }
 }
+
 /****************************************************************************************/
 /*@media screen and (min-width:320px) and (max-width:1109px) {
 
