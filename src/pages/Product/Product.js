@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import './Product.css';
 import '../../index.css';
 import '../Category/Category.css';
@@ -36,29 +36,14 @@ function Product({ typeProducts }) {
     const params = useParams();
     const productId = params.id;
 
-    const color = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map(({ color }) => color)).flat())]
-    );
-    const material = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))]
-    );
-    const size = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(','));
-    const brand = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.brand))]
-    );
-    const price = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))]
-    );
-    const reviews = useMemo(
-        () =>
-            [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())]
-    );
+    const color = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map(({ color }) => color)).flat())];
+   
+    const material = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))];
+
+    const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes)), [typeProducts]].join(' ').split(',');
+    const price = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))];
+    const reviews = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())];
+
     const [sizeValue, setSizeValue] = useState(size[0]);
     const showSize = () => {
         setSizeValue(sizeValue)
