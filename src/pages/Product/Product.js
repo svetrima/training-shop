@@ -37,17 +37,16 @@ function Product({ typeProducts }) {
     const productId = params.id;
 
     const color = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map(({ color }) => color)).flat())];
-   
     const material = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))];
-
-    const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(',');
+    // const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(',');
+    const size = PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes).flat();
     const price = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))];
     const reviews = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())];
+    console.log(size)
 
     const [sizeValue, setSizeValue] = useState(size[0]);
-    const showSize = () => {
-        setSizeValue(sizeValue)
-    };
+
+
     return (
         <div>
             <Navbar />
@@ -108,11 +107,28 @@ function Product({ typeProducts }) {
                                 <div className='clothes_description__size'>
                                     <div className='size_title'>
                                         <h4>size:</h4>
-                                        <span className='size'>S</span>
+                                        <span className='size'>{sizeValue}</span>
                                     </div>
                                     <div className='size_choice'>
+                                        {/*   {size.map((el) => {
+                                            return <button
+                                                key={el.id}
+                                                value={el}
+                                                className={classNames('size_btn btn', { 'size_btn__active': el[sizeValue] === sizeValue })}
+                                                onClick={() => setSizeValue(size)}>
+                                                <span>{el}</span>
+                                            </button>
+                                        })}
+                                        */}
                                         {size.map((el) => {
-                                            return <button key={el} className={classNames('size_btn btn', { 'size_btn__active': el === sizeValue })} onClick={showSize}><span>{el}</span></button>
+                                            return <button
+                                                key={el.id}
+                                                value={el}
+                                                type='button'
+                                                className={['size_btn btn', el === sizeValue ? 'size_btn__active' : ''].join(' ')}
+                                                onClick={() => setSizeValue(el)}>
+                                                <span>{el}</span>
+                                            </button>
                                         })}
                                     </div>
                                     <div className='size_guide'>

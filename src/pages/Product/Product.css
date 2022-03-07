@@ -151,6 +151,7 @@ h4 {
     background: #FFFFFF;
     border: 2px solid #121212;
     box-sizing: border-box;
+    padding:0px;
 }
 
 .size_btn__active span {
