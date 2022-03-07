@@ -41,7 +41,6 @@ const Filter = ({ typeProducts }) => {
                     <button className='cards_btn__full'><span>see all</span></button>
                 </div>
             </div>
-
         </>
     );
 

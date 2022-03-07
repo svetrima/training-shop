@@ -21,7 +21,7 @@ const Category = ({ typeProducts }) => {
                     </div>
                 </div>
                 <div className='wrapper'>
-                    <FilterProducts />
+                    <FilterProducts  typeProducts={typeProducts}/>
 
                     <ProductsPage typeProducts={typeProducts} />
                     <div className='preloader'><img src={preloader} alt='preloader' /></div>
