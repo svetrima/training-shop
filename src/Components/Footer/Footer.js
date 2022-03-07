@@ -47,7 +47,7 @@ function Footer() {
                         <ul className='links_list'>
                             {categories.map(({ name, path }) => (
                                 <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                                    <li>{name}</li></Link>))}
+                                    <li key={name.id}>{name}</li></Link>))}
                         </ul>
                     </div>
                     <div className='information_links links'>
@@ -55,7 +55,7 @@ function Footer() {
                         <ul className='links_list'>
                             {information.map(({ name, path }) => (
                                 <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                                    <li>{name}</li></Link>))}
+                                    <li key={name.id}>{name}</li></Link>))}
                         </ul>
                     </div>
                     <div className='useful_links links'>
@@ -63,7 +63,7 @@ function Footer() {
                         <ul className='links_list'>
                             {useful.map(({ name, path }) => (
                                 <Link to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                                    <li>{name}</li></Link>))}
+                                    <li key={name.id}>{name}</li></Link>))}
                         </ul>
                     </div>
                     <div className='contacts_links links'>
@@ -71,7 +71,7 @@ function Footer() {
                         <ul className='footer_contacts'>
                             {contacts.map(({ img, name, path }) => (
                                 <Link to={`/${path}`} data-test-id={`footer-nav-link-${path}`}>
-                                    <li><img src={img} alt='' /><span>{name}</span></li></Link>))}
+                                    <li key={name.id}><img src={img} alt='' /><span>{name}</span></li></Link>))}
                         </ul>
                     </div>
                 </div>

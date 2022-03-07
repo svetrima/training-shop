@@ -31,11 +31,6 @@
 .cards_filter span:last-child {
     margin-right: 0;
 }
-
-/*.filter_tab:first-child {
-    opacity: 1;
-    чисто декоративная фишка, пока нет логики
-}*/
 .filter_tab__show{
     color:red;
 }
@@ -47,11 +42,13 @@
 
 .card_item__title {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 16px;
     padding: 16px 0;
     text-align: left;
     opacity: 0.6;
+    overflow: hidden;
+    white-space: pre;
 }
 .card img {
     width:100%;
@@ -68,24 +65,23 @@
     font-size: 14px;
     line-height: 16px;
 }
-
+.card_item__description img{
+    width:auto;
+}
 .cards_btn__full {
     display: block;
     width: 100%;
     background: #F8F8F8;
-    /* gr-white */
     outline: none;
     border: 2px solid #F8F8F8;
     box-sizing: border-box;
     cursor: pointer;
-    /*декоративка, из-за стилей пока не видно, что кнопка*/
 }
 
 .cards_btn__full span {
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    /* identical to box height */
     padding: 15.6px 0px 17.4px;
     text-align: center;
     letter-spacing: 0.06em;

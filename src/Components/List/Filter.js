@@ -17,7 +17,7 @@ const Filter = ({ typeProducts }) => {
                         {cardsFilterData.map(element => {
                             return <span
                                 className={classNames('filter_tab', { 'filter_tab__show': element.particularName === filter })}
-                                value={element.particularName} onClick={() => setFilter(element.particularName)} data-test-id={`clothes-${typeProducts}-${element.particularName}`}>{element.name}</span>;
+                                value={element.particularName} onClick={() => setFilter(element.particularName)} key={element.id} data-test-id={`clothes-${typeProducts}-${element.particularName}`}>{element.name}</span>;
                         })}
                     </div>
                 </div>
@@ -25,12 +25,12 @@ const Filter = ({ typeProducts }) => {
                     <div className='layouts-4-columns'>
                         {PRODUCTS[typeProducts].filter((el) => el.particulars[filter]).map(element => {
                             return <Link to={`/${element.category}/${element.id}`} className='cards-item' data-test-id={`clothes-card-${element.category}`}><div className='card'>
-                                <img key={element.img} src={`https://training.cleverland.by/shop${element.images[0]?.url}`} alt={element.title} />
+                                <img key={element.id} src={`https://training.cleverland.by/shop${element.images[0]?.url}`} alt={element.title} />
                                 <div className='card_content'>
                                     <h4 className='card_item__title'>{element.name}</h4>
                                     <div className='card_item__description'>
                                         <span className='card_item__price'>&#36; {element.price}</span>
-                                        <img key={element.rating} src={`../assets/${element.rating}.png`} alt='rating' /></div>
+                                        <img key={element.rating} src={`../assets/${element.rating}.png`} alt={element.rating} /></div>
                                 </div>
                             </div>
                             </Link>

@@ -40,7 +40,7 @@ function Product({ typeProducts }) {
    
     const material = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))];
 
-    const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes)), [typeProducts]].join(' ').split(',');
+    const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(',');
     const price = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))];
     const reviews = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())];
 
