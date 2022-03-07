@@ -26,6 +26,9 @@
     margin-right: 0;
     position: unset;
 }
+ .swiper-vertical .swiper-slide-next:not(.swiper-slide-thumb-active), .swiper-vertical .swiper-slide-active:not(.swiper-slide-thumb-active){
+    opacity:0.2;
+}
 
 .main_block .slider {
     position: relative;
@@ -42,8 +45,17 @@
 .swiper-slide .card{
     width:255px;
 }
+.gallery_block__preview .swiper-slide img{
+    width:100%;
+    height: 560px;
+}
+.gallery_block__choose{
+    width:100px;
 
-
+}
+.gallery_block__choose img{
+    width:100%;
+}
 @media screen and (min-width:991px) and (max-width:1216px) {
     .main_block .slides img {
         width: 720px;
