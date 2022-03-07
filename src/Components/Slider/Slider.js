@@ -8,9 +8,7 @@ import slid from '../Header/assets/header_main.jpg';
 import '../Header/Header.css'
 
 
-
 function Slider() {
-
     return (
         <div className='slider'>
             <Swiper
@@ -39,11 +37,8 @@ function Slider() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-
         </div>
-
     )
-
 }
 
 export default Slider
