@@ -40,6 +40,7 @@ const SliderProduct = ({ typeProducts }) => {
                         }
                     </Swiper>
                 </div>
+
             </div>
             <div className='gallery_block__preview'>
                 <Swiper

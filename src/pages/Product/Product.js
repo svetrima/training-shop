@@ -217,7 +217,7 @@ function Product({ typeProducts }) {
                             </div>
                         </div>
                     </div>
-                    <SliderRelated />
+                    <SliderRelated typeProducts={typeProducts}/>
                 </div>
             </div>
             <Footer />
