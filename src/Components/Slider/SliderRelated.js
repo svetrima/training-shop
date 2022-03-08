@@ -1,13 +1,13 @@
 import React from 'react';
-import { related } from '../../pages/Product/RelatedProduct';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+import { PRODUCTS } from '../../Components/List/ProductsData';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import './Slider.css';
 
-function SliderRelated() {
+function SliderRelated({typeProducts}) {
     return (
         <div className='gallery_related'>
             <div className='gallery_related__title layouts-2-columns'>
@@ -41,14 +41,14 @@ function SliderRelated() {
                         },
                     }}
                     className='swipers'>
-                    {related.map(element => {
+                    {PRODUCTS[typeProducts].map(element => {
                         return <SwiperSlide><Link to={`/${element.category}/${element.id}`} className='cards-item'><div className='card'>
-                            <img key={element.img} src={element.img} alt={element.title} />
+                            <img key={element.id} src={`https://training.cleverland.by/shop${element.images[0]?.url}`}  alt={element.title} />
                             <div className='card_content'>
-                                <h4 className='card_item__title'>{element.title}</h4>
+                                <h4 className='card_item__title'>{element.name}</h4>
                                 <div className='card_item__description'>
-                                    <span className='card_item__price'>{element.price}</span>
-                                    <img key={element.rating} src={element.rating} alt='rating' /></div>
+                                    <span className='card_item__price'>$ {element.price}</span>
+                                    <img key={element.rating} src={element.rating} alt={element.rating} /></div>
                             </div>
                         </div>
                         </Link></SwiperSlide>
