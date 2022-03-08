@@ -21,11 +21,10 @@ const SliderProduct = ({ typeProducts }) => {
 
     return (
         <div className='gallery_block layouts-2-columns' data-test-id='product-slider'>
-
             <div className='gallery_block__choose'>
                 <div className='paginaition layouts-2-columns'>
-                    <div className='chevron chevron_up'>2</div>
-                    <div className='chevron chevron_down'>2</div>
+                    <div className='chevron chevron_up'></div>
+                    <div className='chevron chevron_down'></div>
                     <Swiper
                         modules={[Navigation, Thumbs]}
                         navigation={{ prevEl: '.chevron_down', nextEl: '.chevron_up' }}
@@ -39,16 +38,8 @@ const SliderProduct = ({ typeProducts }) => {
                                 return <SwiperSlide key={el.id}> <img src={`https://training.cleverland.by/shop${el}`} alt='img_left' /></SwiperSlide>
                             })
                         }
-                       {/*     <SwiperSlide><img src={mediumActive} alt='active' /></SwiperSlide>
-                        <SwiperSlide ><img src={medium1} alt='medium1' /></SwiperSlide>
-                        <SwiperSlide ><img src={medium2} alt='medium2' /></SwiperSlide>
-                        <SwiperSlide> <img src={medium3} alt='medium3' /></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>*/}
                     </Swiper>
                 </div>
-
             </div>
             <div className='gallery_block__preview'>
                 <Swiper
@@ -61,10 +52,6 @@ const SliderProduct = ({ typeProducts }) => {
                             return <SwiperSlide key={el.id}> <img src={`https://training.cleverland.by/shop${el}`} alt='img_main' /></SwiperSlide>
                         })
                     }
-                    {/* 
-                    <SwiperSlide><img src={full} alt='full' /></SwiperSlide>
-                    <SwiperSlide><img src={full} alt='full' /></SwiperSlide>
-                    <SwiperSlide><img src={full} alt='full' /></SwiperSlide>*/}
                 </Swiper>
             </div>
         </div>
