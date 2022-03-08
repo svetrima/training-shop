@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import { PRODUCTS } from '../../Components/List/ProductsData';
+import classNames from "classnames";
 import 'swiper/css/navigation';
 import 'swiper/css';
 import './Slider.css';
