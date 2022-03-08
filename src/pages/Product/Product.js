@@ -88,7 +88,7 @@ function Product({ typeProducts }) {
                 <div className='wrapper'>
                     <div className='gallery layouts-2-columns'>
 
-                        <SliderProduct />
+                        <SliderProduct typeProducts={typeProducts}/>
 
                         <div className='gallery_description'>
                             <div className='clothes_description'>
