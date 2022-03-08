@@ -31,13 +31,16 @@
 .cards_filter span:last-child {
     margin-right: 0;
 }
-.filter_tab__show{
-    color:red;
+
+.filter_tab__show {
+    color: red;
 }
+
 .card {
     margin-bottom: 30px;
-    width:255px;
+    width: 255px;
     overflow: hidden;
+    position: relative;
 }
 
 .card_item__title {
@@ -50,10 +53,12 @@
     overflow: hidden;
     white-space: pre;
 }
+
 .card img {
-    width:100%;
+    width: 100%;
     height: auto;
 }
+
 .card_item__description {
     display: flex;
     flex-direction: row;
@@ -65,9 +70,11 @@
     font-size: 14px;
     line-height: 16px;
 }
-.card_item__description img{
-    width:auto;
+
+.card_item__description img {
+    width: auto;
 }
+
 .cards_btn__full {
     display: block;
     width: 100%;
@@ -88,6 +95,28 @@
     text-transform: uppercase;
     display: block;
     opacity: 0.8;
+}
+
+/*Discount*/
+.discount_active span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px 10px;
+}
+
+.discount_active {
+    position: absolute;
+    width: 53px;
+    height: 31px;
+    left: 370px;
+    top: 884px;
+    z-index: 99;
+    background: #E91E63;
+    top: 0;
+    left: 0;
 }
 
 /*990*/
