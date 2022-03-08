@@ -47,7 +47,13 @@ function SliderRelated({typeProducts}) {
                             <div className='card_content'>
                                 <h4 className='card_item__title'>{element.name}</h4>
                                 <div className='card_item__description'>
-                                    <span className='card_item__price'>$ {element.price}</span>
+                                <div className='price'>
+                                    <span className='card_item__price'>&#36; {element.discount ? `${(element.price + (element.price / 100) * parseInt(element.discount, 10)).toFixed(2)}` : element.price}
+                                    </span>
+                                    <span className={classNames('discount_price', { 'discount_price__active': element.discount })}>
+                                        {element.discount ? `$ ${element.price}` : null}
+                                    </span>
+                                </div>
                                     <img key={element.rating} src={element.rating} alt={element.rating} /></div>
                             </div>
                         </div>
