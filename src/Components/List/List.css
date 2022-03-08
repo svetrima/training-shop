@@ -69,6 +69,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+    margin-right:10px;
 }
 
 .card_item__description img {
@@ -118,7 +119,14 @@
     top: 0;
     left: 0;
 }
-
+.discount_price__active{
+    font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-decoration-line: line-through;
+color: #121212;
+opacity: 0.4;
+}
 /*990*/
 @media screen and (min-width:791px) and (max-width:990px) {
     .cards .layouts-2-columns {
