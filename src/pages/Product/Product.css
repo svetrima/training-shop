@@ -126,7 +126,14 @@ h4 {
     line-height: 18px;
     opacity: 0.6;
 }
-
+/*color btn */
+.color_btn{
+    width:60px !important;
+    height: 90px;
+}
+.color_btn img{
+    width:100%;
+}
 /*Size btn */
 .size_btn, .color_btn {
     width: unset;
