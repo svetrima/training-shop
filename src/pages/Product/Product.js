@@ -42,7 +42,7 @@ function Product({ typeProducts }) {
     useEffect(() => {
         setSizeValue(size[0]);
         setColorValue(color[0]);
-    }, [params]);
+    }, [size[0], color[0]]);
     return (
         <div>
             <Navbar />
