@@ -24,8 +24,6 @@ import SliderRelated from '../../Components/Slider/SliderRelated';
 import share from '../Category/assets/share.png';
 import { Link, useParams } from 'react-router-dom';
 import { PRODUCTS } from '../../Components/List/ProductsData';
-//import classNames from "classnames";
-
 
 function Product({ typeProducts }) {
     const params = useParams();
