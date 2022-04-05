@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Product.css';
 import '../../index.css';
 import '../Category/Category.css';
@@ -18,17 +18,12 @@ import mastercard from './assets/icons/mastercard_x42.png';
 import discover from './assets/icons/discover_x42.png';
 import americanexpress from './assets/icons/american-express_x42.png';
 import fullrating from './assets/full_rating.png';
-import choiceActive from './assets/choise_active.png';
-import choice1 from './assets/choice_2.png';
-import choice2 from './assets/choice_3.png';
-import choice3 from './assets/choice_4.png';
 import message from './assets/icons/annotation.png';
 import SliderProduct from '../../Components/Slider/SliderProduct';
 import SliderRelated from '../../Components/Slider/SliderRelated';
 import share from '../Category/assets/share.png';
 import { Link, useParams } from 'react-router-dom';
 import { PRODUCTS } from '../../Components/List/ProductsData';
-import { useState } from 'react';
 //import classNames from "classnames";
 
 
@@ -37,16 +32,19 @@ function Product({ typeProducts }) {
     const productId = params.id;
 
     const color = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map(({ color }) => color)).flat())];
+    const imageColor = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map(({ images }) => images.map((el) => el)).flat())];
     const material = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.material))];
-    // const size = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes))].join(' ').split(',');
     const size = PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes).flat();
     const price = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))];
     const reviews = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())];
-    console.log(size)
 
     const [sizeValue, setSizeValue] = useState(size[0]);
+    const [colorValue, setColorValue] = useState(color[0]);
 
-
+    useEffect(() => {
+        setSizeValue(size[0]);
+        setColorValue(color[0]);
+    }, [params]);
     return (
         <div>
             <Navbar />
@@ -88,20 +86,29 @@ function Product({ typeProducts }) {
                 <div className='wrapper'>
                     <div className='gallery layouts-2-columns'>
 
-                        <SliderProduct typeProducts={typeProducts}/>
+                        <SliderProduct typeProducts={typeProducts} />
 
                         <div className='gallery_description'>
                             <div className='clothes_description'>
                                 <div className='clothes_description__color'>
                                     <div className='color_title'>
                                         <h4>color:</h4>
-                                        <span className='colorful_title'>{color}</span>
+                                        <span className='colorful_title'>{colorValue}</span>
                                     </div>
                                     <div className='color_choice'>
-                                        <img src={choiceActive} alt='active' />
-                                        <img src={choice1} alt='choice1' />
-                                        <img src={choice2} alt='choice2' />
-                                        <img src={choice3} alt='choice3' />
+
+                                        {
+                                            color.map((el) => imageColor.find(({ color }) => color === el)).map(({ color, url, id }) => {
+                                                return <button
+                                                    key={id}
+                                                    value={color}
+                                                    type='button'
+                                                    className={['color_btn btn', color === colorValue ? 'color_btn__active' : ''].join(' ')}
+                                                    onClick={() => setColorValue(color)}>
+                                                    <img src={`https://training.cleverland.by/shop/${url}`} alt={id} />
+                                                </button>
+                                            })
+                                        }
                                     </div>
                                 </div>
                                 <div className='clothes_description__size'>
@@ -110,16 +117,6 @@ function Product({ typeProducts }) {
                                         <span className='size'>{sizeValue}</span>
                                     </div>
                                     <div className='size_choice'>
-                                        {/*   {size.map((el) => {
-                                            return <button
-                                                key={el.id}
-                                                value={el}
-                                                className={classNames('size_btn btn', { 'size_btn__active': el[sizeValue] === sizeValue })}
-                                                onClick={() => setSizeValue(size)}>
-                                                <span>{el}</span>
-                                            </button>
-                                        })}
-                                        */}
                                         {size.map((el) => {
                                             return <button
                                                 key={el.id}
@@ -217,7 +214,7 @@ function Product({ typeProducts }) {
                             </div>
                         </div>
                     </div>
-                    <SliderRelated typeProducts={typeProducts}/>
+                    <SliderRelated typeProducts={typeProducts} />
                 </div>
             </div>
             <Footer />
