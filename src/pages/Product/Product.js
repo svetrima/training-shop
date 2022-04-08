@@ -35,14 +35,17 @@ function Product({ typeProducts }) {
     const size = PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.sizes).flat();
     const price = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.price))];
     const reviews = [...new Set(PRODUCTS[typeProducts].filter((el) => el.id === productId).map((el) => el.reviews).flat())];
-
-    const [sizeValue, setSizeValue] = useState(size[0]);
-    const [colorValue, setColorValue] = useState(color[0]);
+    
+    let defaultSize = size[0];
+    let defaultColor = color[0];
+    const [sizeValue, setSizeValue] = useState(defaultSize);
+    const [colorValue, setColorValue] = useState(defaultColor);
 
     useEffect(() => {
-        setSizeValue(size[0]);
-        setColorValue(color[0]);
-    }, [size[0], color[0]]);
+        setSizeValue(defaultSize);
+        setColorValue(defaultColor);
+       console.log('pfff')
+    }, [defaultSize, defaultColor]);
     return (
         <div>
             <Navbar />
